@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="eng" data-livestyle-extension="available">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome!</title>
+
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="icon" href="favicon.ico" />
+    <link rel="stylesheet" href="/reg-form/intlTelInput.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/styles_mobile.css" />
+    <link rel="stylesheet" href="css/styles_tablet.css" />
+    <link rel="stylesheet" href="css/styles_desktop.css" />
+
+    <!-- AUTOPIXEL -->
+    <script>
+      let url =
+        window.location.protocol + "//" + window.location.host + "/pixel.js";
+      let request = new XMLHttpRequest();
+      request.open("GET", url, false);
+      request.send(null);
+      if (request.status === 200) {
+        let template = document.createElement("script");
+        template.innerHTML = request.responseText;
+        document.getElementsByTagName("head")[0].appendChild(template);
+      }
+    </script>
+    <!-- END OF AUTOPIXEL -->
+  </head>
+
+  <body>
+    
+
+    <script src="js/jquery.js"></script>
+    <script type="text/javascript" src="/geo.js"></script>
+    <script type="text/javascript" src="/reg-form/reg.min.v2.js"></script>
+
+    <!-- <script>
+      var regFormParams = { projectId: 478, language: "en" };
+      FRSender.init(function (result) {
+        if (result.data) {
+          if (typeof fbq === "function") {
+            fbq("track", "CompleteRegistration");
+          }
+
+          window.location =
+            "https://rubix-eng478.trade-academy.pro/?token=" + result.data;
+        } else {
+          var winWidth = document.body.clientWidth;
+          if (winWidth > 500) {
+            winWidth = 500;
+          }
+          FRModalWindow.show(
+            winWidth,
+            "Current account is already existing</br>" +
+              "Click Next to redirect into the cabinet" +
+              '<button   style="font-size:16px; font-family:Roboto-Black; border-radius:5px; border-color: #f2ad07;' +
+              'background-color: #f2ad07; margin-left: 138px; margin-top: 10px; width:130px;height:30px;">' +
+              '<a href="https://rubix-eng478.trade-academy.pro/">Account</a></button>' +
+              "</div>"
+          );
+        }
+      });
+    </script> -->
+    
+  </body>
+</html>
