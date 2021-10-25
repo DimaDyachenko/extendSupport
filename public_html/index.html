@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Welcome!</title>
 
-    
     <!-- <link rel="icon" href="favicon.ico" /> -->
     <link rel="stylesheet" href="/reg-form/intlTelInput.css" />
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/styles_mobile.css" />
     <link rel="stylesheet" href="css/styles_tablet.css" />
     <link rel="stylesheet" href="css/styles_desktop.css" />
+    <link rel="stylesheet" href="css/burger.css" />
 
     <!-- AUTOPIXEL -->
     <script>
@@ -31,13 +31,174 @@
   </head>
 
   <body>
-    <header>
-      
+    <header class="header">
+      <div class="topBlock container">
+        <img class="logoImgTop" src="./images/mainLogo.png" />
+        <nav role="navigation" class="nav">
+          <div id="menuToggle" class="burgerMenu">
+            <!--
+            A fake / hidden checkbox is used as click reciever,
+            so you can use the :checked selector on it.
+            -->
+            <input type="checkbox" />
+
+            <!--
+            Some spans to act as a hamburger.
+            
+            They are acting like a real hamburger,
+            not that McDonalds stuff.
+            -->
+            <span></span>
+            <span></span>
+            <span></span>
+
+            <!--
+            Too bad the menu has to be inside of the button
+            but hey, it's pure CSS magic.
+            -->
+            <ul id="menu" class="navList">
+              <a href="#" class="navLink"><li class="navText">HOME</li></a>
+              <a href="#" class="navLink"><li class="navText">ABOUT US</li></a>
+              <a href="#" class="navLink innerMenu"
+                ><li class="navText accordion">
+                  WHAT WE OFFER
+                  <div class="triangle"></div>
+                  <ul id="menuInMenu" class="navInnerList panel">
+                    <a href="#" class="navLink"
+                      ><li class="navTextSmall">Human Resources</li></a
+                    >
+                    <a href="#" class="navLink"
+                      ><li class="navTextSmall">Management Consulting</li></a
+                    >
+                    <a href="#" class="navLink"
+                      ><li class="navTextSmall">Finance Consulting</li></a
+                    >
+                    <a href="#" class="navLink"
+                      ><li class="navTextSmall">Training</li></a
+                    >
+                  </ul>
+                </li></a
+              >
+              <a href="#" class="navLink"><li class="navText">CONTACT</li></a>
+              <a href="#" class="navLink"
+                ><li class="navText careers">CAREERS</li></a
+              >
+              <a href="#" class="navLink">
+                <img class="linkedinTop" src="./images/linkedin.png"
+              /></a>
+              <a href="#" class="navLink">
+                <img class="facebookTop" src="./images/facebook.png"
+              /></a>
+            </ul>
+          </div>
+        </nav>
+        <nav class="desktopNav">
+          <ul class="navList">
+            <a href="#" class="navLink"><li class="navText">HOME</li></a>
+            <a href="#" class="navLink"><li class="navText">ABOUT US</li></a>
+            <a href="#" class="navLink"
+              ><li class="navText">
+                WHAT WE OFFER
+                <ul class="navInnerList">
+                  <a href="#" class="navLink"
+                    ><li class="navTextSmall">Human Resources</li></a
+                  >
+                  <a href="#" class="navLink"
+                    ><li class="navTextSmall">Management Consulting</li></a
+                  >
+                  <a href="#" class="navLink"
+                    ><li class="navTextSmall">Finance Consulting</li></a
+                  >
+                  <a href="#" class="navLink"
+                    ><li class="navTextSmall">Training</li></a
+                  >
+                </ul>
+              </li></a
+            >
+            <a href="#" class="navLink"><li class="navText">CONTACT</li></a>
+            <a href="#" class="navLink" target="_blank"
+              ><li class="navText">CAREERS</li></a
+            >
+            <a href="#" class="navLink">
+              <img class="linkedinTop" src="./images/linkedin.png"
+            /></a>
+            <a href="#" class="navLink">
+              <img class="facebookTop" src="./images/facebook.png"
+            /></a>
+          </ul>
+        </nav>
+      </div>
+      <div class="headerContent container">
+        <h1 class="headerTitle">Solving Complexity Through Collaboration</h1>
+        <p class="headerText">
+          YOU HAVE THE VISION. WE HAVE THE COMPLETE SOLUTIONS TO GET YOU THERE.
+        </p>
+        <button class="mainButton">
+          <a href="#" class="mainButtonText">What we offer</a>
+        </button>
+      </div>
     </header>
+    <section class="brownSection container businessKnows">
+      <div class="leftContent">
+        <h2 class="titleWithLine">EVERY GREAT BUSINESS KNOWS THAT</h2>
+        <h1 class="mainTitle white">
+          In order to build, you must have a strong foundation!
+        </h1>
+      </div>
+      <div class="rightContent">
+        <p class="ordinaryText">
+          That’s where we come in. From our comprehensive HR expertise,
+          excellent financial services to our unparalleled training programs, we
+          give your business, and employees, tailored solutions to help you grow
+          successfully.
+        </p>
+      </div>
+    </section>
+    <section class="creamSection container weAreYourSolution">
+      <div class="leftContent">
+        <h2 class="titleWithLine">Global Support Multisourcing</h2>
+        <h1 class="mainTitle red">
+          We are your solution!
+        </h1>
+        <div class="listWithYellowDots">
+          <ul class="list">
+            <div class="dotAndList">
+
+            </div>
+            <li class="listItem">We encourage autonomy (DO IT YOURSELF) and taking responsibility for our actions.</li>
+            <li class="listItem">We are responsible</li>
+            <li class="listItem">We encourage personal and professional development</li>
+            <li class="listItem">We are passionate about our work.</li>
+            <li class="listItem">We believe in what we do.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="rightContent">
+        <img class="weAreYourSolutionImg" src="./images/mensHandShake.png" style="max-width: 100px;"/>
+      </div>
+    </section>
 
     <script src="js/jquery.js"></script>
     <script type="text/javascript" src="/geo.js"></script>
     <script type="text/javascript" src="/reg-form/reg.min.v2.js"></script>
+
+    <script>
+      var acc = document.getElementsByClassName("accordion");
+      var i;
+
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          var panel = this.lastElementChild;
+
+          if (panel.style.maxHeight) {
+            panel.style.maxHeight = null;
+          } else {
+            panel.style.maxHeight = panel.scrollHeight + "px";
+          }
+        });
+      }
+    </script>
 
     <!-- <script>
       var regFormParams = { projectId: 478, language: "en" };
@@ -66,6 +227,5 @@
         }
       });
     </script> -->
-    
   </body>
 </html>
