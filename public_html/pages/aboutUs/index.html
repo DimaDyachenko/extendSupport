@@ -4,12 +4,12 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Welcome!</title>
+    <title>About Us</title>
 
-    
     <!-- <link rel="icon" href="favicon.ico" /> -->
     <link rel="stylesheet" href="/reg-form/intlTelInput.css" />
     <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/burger.css" />
     <link rel="stylesheet" href="css/styles_mobile.css" />
     <link rel="stylesheet" href="css/styles_tablet.css" />
     <link rel="stylesheet" href="css/styles_desktop.css" />
@@ -31,13 +31,363 @@
   </head>
 
   <body>
-    <header>
-      
+    <header class="header">
+      <div class="desktopWrapper ">
+        <div class="topBlock container">
+          <img class="logoImgTop" src="./images/mainLogo.png" />
+          <nav role="navigation" class="nav">
+            <div id="menuToggle" class="burgerMenu">
+              <!--
+              A fake / hidden checkbox is used as click reciever,
+              so you can use the :checked selector on it.
+              -->
+              <input type="checkbox" />
+
+              <!--
+              Some spans to act as a hamburger.
+              
+              They are acting like a real hamburger,
+              not that McDonalds stuff.
+              -->
+              <span></span>
+              <span></span>
+              <span></span>
+
+              <!--
+              Too bad the menu has to be inside of the button
+              but hey, it's pure CSS magic.
+              -->
+              <ul id="menu" class="navList">
+                <a href="#" class="navLink">
+                  <li class="navText">HOME</li>
+                </a>
+                <a href="#" class="navLink">
+                  <li class="navText">ABOUT US</li>
+                </a>
+                <a href="#" class="navLink innerMenu">
+                  <li class="navText accordion">
+                    WHAT WE OFFER
+                    <div class="triangle"></div>
+                    <ul id="menuInMenu" class="navInnerList panel">
+                      <a href="#" class="navLink">
+                        <li class="navTextSmall">Human Resources</li>
+                      </a>
+                      <a href="#" class="navLink">
+                        <li class="navTextSmall">Management Consulting</li>
+                      </a>
+                      <a href="#" class="navLink">
+                        <li class="navTextSmall">Finance Consulting</li>
+                      </a>
+                      <a href="#" class="navLink">
+                        <li class="navTextSmall">Training</li>
+                      </a>
+                    </ul>
+                  </li>
+                </a>
+                <a href="#" class="navLink">
+                  <li class="navText">CONTACT</li>
+                </a>
+                <a href="#" class="navLink">
+                  <li class="navText careers">CAREERS</li>
+                </a>
+                <a href="#" class="navLink">
+                  <img class="linkedinTop" src="./images/linkedin.png"
+                /></a>
+                <a href="#" class="navLink">
+                  <img class="facebookTop" src="./images/facebook.png"
+                /></a>
+              </ul>
+            </div>
+          </nav>
+          <nav class="desktopNav">
+            <ul class="navList">
+              <a href="#" class="navLink">
+                <li class="navText">HOME</li>
+              </a>
+              <a href="#" class="navLink">
+                <li class="navText">ABOUT US</li>
+              </a>
+              <a href="#" class="navLink innerMenu">
+                <li class="navText accordion">
+                  WHAT WE OFFER
+                  <div class="triangle"></div>
+                  <ul class="navInnerList panel">
+                    <div class="triangleAccordion"></div>
+                    <a href="#" class="navLink">
+                      <li class="navTextSmall">Human Resources</li>
+                    </a>
+                    <a href="#" class="navLink">
+                      <li class="navTextSmall">Management Consulting</li>
+                    </a>
+                    <a href="#" class="navLink">
+                      <li class="navTextSmall">Finance Consulting</li>
+                    </a>
+                    <a href="#" class="navLink">
+                      <li class="navTextSmall">Training</li>
+                    </a>
+                  </ul>
+                </li>
+              </a>
+              <a href="#" class="navLink">
+                <li class="navText">CONTACT</li>
+              </a>
+              <a href="#" class="navLink">
+                <li class="navText careersDesktop">CAREERS</li>
+              </a>
+              <a href="#" class="navLink">
+                <img class="linkedinTop" src="./images/linkedin.png"
+              /></a>
+              <a href="#" class="navLink">
+                <img class="facebookTop" src="./images/facebook.png"
+              /></a>
+            </ul>
+          </nav>
+        </div>
+        <div class="headerContent container">
+          <h2 class="titleWithLine">About us</h2>
+          <h1 class="headerTitle">GSM Solution People</h1>
+          <p class="headerText gold">
+            ”We encourage autonomy (DO IT YOURSELF) and taking responsibility
+            for our actions.”
+          </p>
+        </div>
+      </div>
     </header>
+    <section class="brownSection responsibleCard">
+      <h2 class="titleWithLine noLine">We are</h2>
+      <h1 class="mainTitle white">Responsible</h1>
+    </section>
+    <section class="creamSection responsibleCard">
+      <h2 class="titleWithLine noLine">We encourage</h2>
+      <h1 class="mainTitle black">Personal and Professional Development</h1>
+    </section>
+    <section class="brownSection responsibleCard">
+      <h2 class="titleWithLine noLine">We are</h2>
+      <h1 class="mainTitle white">Passionate About Our Work</h1>
+    </section>
+    <section class="creamSection responsibleCard">
+      <h2 class="titleWithLine noLine">We believe</h2>
+      <h1 class="mainTitle black">In What We Do</h1>
+    </section>
+    <section class="creamSectionWithPhoto">
+      <div class="customerOrientation">
+        <div class="rightContentPhoto">
+          <img
+            class="weAreYourSolutionImg"
+            src="./images/aboutUsConversation.png"
+          />
+        </div>
+        <div class="leftContentWithPhoto container">
+          <h2 class="titleWithLine">Values, Vision & Mission</h2>
+          <h1 class="mainTitle red">Customer Orientation</h1>
+          <div class="listWithYellowDots">
+            <ul class="list">
+              <div class="pointAndList">
+                <img class="checkmark" src="./images/checkmark.png" />
+                <li class="listItem">
+                  We understand who the client is, what he needs and why we
+                  serve him.
+                </li>
+              </div>
+              <div class="pointAndList">
+                <img class="checkmark" src="./images/checkmark.png" />
+                <li class="listItem">
+                  We fundamentally contribute to the client’s business success.
+                </li>
+              </div>
+              <div class="pointAndList">
+                <img class="checkmark" src="./images/checkmark.png" />
+                <li class="listItem">
+                  We listen, understand and work in the client’s favor.
+                </li>
+              </div>
+              <div class="pointAndList">
+                <img class="checkmark" src="./images/checkmark.png" />
+
+                <li class="listItem">
+                  We are aware of the value we bring to the client.
+                </li>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="creamSectionWithPhoto">
+      <div class="resultsOriented">
+        <div class="rightContentPhoto">
+          <img
+            class="weAreYourSolutionImg"
+            src="./images/writingTestImg.png"
+          />
+        </div>
+        <div class="leftContentWithPhoto container">
+          <h2 class="titleWithLine">Values, Vision & Mission</h2>
+          <h1 class="mainTitle red">Results Oriented</h1>
+          <div class="listWithYellowDots">
+            <ul class="list">
+              <div class="pointAndList">
+                <img class="checkmark" src="./images/checkmark.png" />
+                <li class="listItem">
+                  The results matter!
+                </li>
+              </div>
+              <div class="pointAndList">
+                <img class="checkmark" src="./images/checkmark.png" />
+                <li class="listItem">
+                  We do more with less
+                </li>
+              </div>
+              <div class="pointAndList">
+                <img class="checkmark" src="./images/checkmark.png" />
+                <li class="listItem">
+                  We work with a sense of emergency
+                </li>
+              </div>
+              <div class="pointAndList">
+                <img class="checkmark" src="./images/checkmark.png" />
+
+                <li class="listItem">
+                  Any difficult situation is an opportunity for development and finding solutions
+                </li>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="brownSection">
+      <div class="whatWeOfferBlock">
+        <div class="titleAndButtonBlock">
+          <h1 class="mainTitle white">What We Offer</h1>
+          <button class="mainButton ">
+            <a href="#" class="mainButtonText">Our Services</a>
+          </button>
+        </div>
+        <div class="progressBarsBlock">
+          <div class="progressBarContainer">
+            <div class="progress">
+              <p class="progressText">Human Resources</p>
+              <p class="percents">96%</p>
+            </div>
+          </div>
+          <div class="progressBarContainer">
+            <div class="progress">
+              <p class="progressText">Training</p>
+              <p class="percents">95%</p>
+            </div>
+          </div>
+          <div class="progressBarContainer">
+            <div class="progress">
+              <p class="progressText">Finance Consulting</p>
+              <p class="percents">96%</p>
+            </div>
+          </div>
+          <div class="progressBarContainer">
+            <div class="progress">
+              <p class="progressText">Management Consulting</p>
+              <p class="percents">95%</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="goldCarrerBlock">
+      <div class="carrerBlockDesktop">
+        <div class="leftContent">
+          <h1 class="mainTitle black careersTitle">
+            Looking for a job opportunity?
+          </h1>
+        </div>
+        <div class="rightContent">
+          <button class="mainButton redBg">
+            <a href="#" class="mainButtonText">See our open positions</a>
+          </button>
+        </div>
+      </div>
+    </section>
+    
+    <footer class="footer container">
+      <div class="logoFooterBlock">
+        <img class="logoFooter" src="./images//mainLogo.png" />
+      </div>
+      <div class="footerContentBlock">
+        <div class="quickLinksBlock">
+          <h1 class="footerTitle">Quick Links</h1>
+          <ul class="linksList">
+            <a href="#" class="navLinkFooter"
+              ><li class="navTextFooter">Home</li></a
+            >
+            <a href="#" class="navLinkFooter"
+              ><li class="navTextFooter">About Us</li></a
+            >
+            <a href="#" class="navLinkFooter"
+              ><li class="navTextFooter">What We Offer</li></a
+            >
+            <a href="#" class="navLinkFooter"
+              ><li class="navTextFooter">Careers</li></a
+            >
+            <a href="#" class="navLinkFooter"
+              ><li class="navTextFooter">Contact</li></a
+            >
+            <a href="#" class="navLinkFooter">
+              <img class="linkedinBot" src="./images/linkedin.png"
+            /></a>
+            <a href="#" class="navLinkFooter">
+              <img class="facebookBot" src="./images/facebook.png"
+            /></a>
+          </ul>
+        </div>
+        <div class="footerContactBlock">
+          <h1 class="footerTitle">Contact</h1>
+          <ul class="list">
+            <div class="typeOfContactAndDetailsFooter">
+              <p class="typeOfContact">Phone:</p>
+              <li class="contactDetails">+ 37 368 68 38 24</li>
+            </div>
+            <div class="typeOfContactAndDetailsFooter">
+              <p class="typeOfContact">Email:</p>
+              <li class="contactDetails">office@extend.support.com</li>
+            </div>
+            <div class="typeOfContactAndDetailsFooter">
+              <p class="typeOfContact">Address:</p>
+              <li class="contactDetails">
+                MD-2001, 17 Mihail Kogalniceanu street, of.21 Chisinau, Moldova
+              </li>
+            </div>
+          </ul>
+          <a href="#" class="footerLink">Get in touch</a>
+          <a href="#" class="footerLink">Privacy Policy</a>
+        </div>
+      </div>
+      <div class="copyrigthBlock">
+        <p class="footerCopyrigth">
+          Copyright © 2020 Extend Support Multisourcing
+        </p>
+      </div>
+    </footer>
 
     <script src="js/jquery.js"></script>
     <script type="text/javascript" src="/geo.js"></script>
     <script type="text/javascript" src="/reg-form/reg.min.v2.js"></script>
+
+    <script>
+      var acc = document.getElementsByClassName("accordion");
+      var i;
+
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          var panel = this.lastElementChild;
+
+          if (panel.style.maxHeight) {
+            panel.style.maxHeight = null;
+          } else {
+            panel.style.maxHeight = panel.scrollHeight + "px";
+          }
+        });
+      }
+    </script>
 
     <!-- <script>
       var regFormParams = { projectId: 478, language: "en" };
@@ -66,6 +416,5 @@
         }
       });
     </script> -->
-    
   </body>
 </html>
