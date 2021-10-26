@@ -97,10 +97,11 @@
 
 #menu {
   position: absolute;
-  margin: -70px -20px;
+  /* margin: -70px -20px; */
+  top: calc(0% - 42px);
+  right: calc(0% - 20px);
   text-align: center;
-  padding-top: 125px;
-  right: 0;
+  padding-top: 120px;
   width: 100vw;
   height: 100vh;
   background: #240c0c;
@@ -196,7 +197,8 @@
 
 @media (min-width: 720px) {
   #menu {
-    margin: -110px -40px;
+    top: calc(0% - 62px);
+    right: calc(0% - 40px);
   }
   .careers {
     max-width: 380px;
