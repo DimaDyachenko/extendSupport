@@ -32,57 +32,108 @@
 
   <body>
     <header class="header">
-      <div class="topBlock container">
-        <img class="logoImgTop" src="./images/mainLogo.png" />
-        <nav role="navigation" class="nav">
-          <div id="menuToggle" class="burgerMenu">
-            <!--
-            A fake / hidden checkbox is used as click reciever,
-            so you can use the :checked selector on it.
-            -->
-            <input type="checkbox" />
+      <div class="desktopWrapper">
+        <div class="topBlock container">
+          <img class="logoImgTop" src="./images/mainLogo.png" />
+          <nav role="navigation" class="nav">
+            <div id="menuToggle" class="burgerMenu">
+              <!--
+              A fake / hidden checkbox is used as click reciever,
+              so you can use the :checked selector on it.
+              -->
+              <input type="checkbox" />
 
-            <!--
-            Some spans to act as a hamburger.
-            
-            They are acting like a real hamburger,
-            not that McDonalds stuff.
-            -->
-            <span></span>
-            <span></span>
-            <span></span>
+              <!--
+              Some spans to act as a hamburger.
+              
+              They are acting like a real hamburger,
+              not that McDonalds stuff.
+              -->
+              <span></span>
+              <span></span>
+              <span></span>
 
-            <!--
-            Too bad the menu has to be inside of the button
-            but hey, it's pure CSS magic.
-            -->
-            <ul id="menu" class="navList">
-              <a href="#" class="navLink"><li class="navText">HOME</li></a>
-              <a href="#" class="navLink"><li class="navText">ABOUT US</li></a>
-              <a href="#" class="navLink innerMenu"
-                ><li class="navText accordion">
+              <!--
+              Too bad the menu has to be inside of the button
+              but hey, it's pure CSS magic.
+              -->
+              <ul id="menu" class="navList">
+                <a href="#" class="navLink">
+                  <li class="navText">HOME</li>
+                </a>
+                <a href="#" class="navLink">
+                  <li class="navText">ABOUT US</li>
+                </a>
+                <a href="#" class="navLink innerMenu">
+                  <li class="navText accordion">
+                    WHAT WE OFFER
+                    <div class="triangle"></div>
+                    <ul id="menuInMenu" class="navInnerList panel">
+                      <a href="#" class="navLink">
+                        <li class="navTextSmall">Human Resources</li>
+                      </a>
+                      <a href="#" class="navLink">
+                        <li class="navTextSmall">Management Consulting</li>
+                      </a>
+                      <a href="#" class="navLink">
+                        <li class="navTextSmall">Finance Consulting</li>
+                      </a>
+                      <a href="#" class="navLink">
+                        <li class="navTextSmall">Training</li>
+                      </a>
+                    </ul>
+                  </li>
+                </a>
+                <a href="#" class="navLink">
+                  <li class="navText">CONTACT</li>
+                </a>
+                <a href="#" class="navLink">
+                  <li class="navText careers">CAREERS</li>
+                </a>
+                <a href="#" class="navLink">
+                  <img class="linkedinTop" src="./images/linkedin.png"
+                /></a>
+                <a href="#" class="navLink">
+                  <img class="facebookTop" src="./images/facebook.png"
+                /></a>
+              </ul>
+            </div>
+          </nav>
+          <nav class="desktopNav">
+            <ul class="navList">
+              <a href="#" class="navLink">
+                <li class="navText">HOME</li>
+              </a>
+              <a href="#" class="navLink">
+                <li class="navText">ABOUT US</li>
+              </a>
+              <a href="#" class="navLink innerMenu">
+                <li class="navText accordion">
                   WHAT WE OFFER
                   <div class="triangle"></div>
-                  <ul id="menuInMenu" class="navInnerList panel">
-                    <a href="#" class="navLink"
-                      ><li class="navTextSmall">Human Resources</li></a
-                    >
-                    <a href="#" class="navLink"
-                      ><li class="navTextSmall">Management Consulting</li></a
-                    >
-                    <a href="#" class="navLink"
-                      ><li class="navTextSmall">Finance Consulting</li></a
-                    >
-                    <a href="#" class="navLink"
-                      ><li class="navTextSmall">Training</li></a
-                    >
+                  <ul class="navInnerList panel">
+                    <div class="triangleAccordion"></div>
+                    <a href="#" class="navLink">
+                      <li class="navTextSmall">Human Resources</li>
+                    </a>
+                    <a href="#" class="navLink">
+                      <li class="navTextSmall">Management Consulting</li>
+                    </a>
+                    <a href="#" class="navLink">
+                      <li class="navTextSmall">Finance Consulting</li>
+                    </a>
+                    <a href="#" class="navLink">
+                      <li class="navTextSmall">Training</li>
+                    </a>
                   </ul>
-                </li></a
-              >
-              <a href="#" class="navLink"><li class="navText">CONTACT</li></a>
-              <a href="#" class="navLink"
-                ><li class="navText careers">CAREERS</li></a
-              >
+                </li>
+              </a>
+              <a href="#" class="navLink">
+                <li class="navText">CONTACT</li>
+              </a>
+              <a href="#" class="navLink">
+                <li class="navText careersDesktop">CAREERS</li>
+              </a>
               <a href="#" class="navLink">
                 <img class="linkedinTop" src="./images/linkedin.png"
               /></a>
@@ -90,93 +141,270 @@
                 <img class="facebookTop" src="./images/facebook.png"
               /></a>
             </ul>
-          </div>
-        </nav>
-        <nav class="desktopNav">
-          <ul class="navList">
-            <a href="#" class="navLink"><li class="navText">HOME</li></a>
-            <a href="#" class="navLink"><li class="navText">ABOUT US</li></a>
-            <a href="#" class="navLink"
-              ><li class="navText">
-                WHAT WE OFFER
-                <ul class="navInnerList">
-                  <a href="#" class="navLink"
-                    ><li class="navTextSmall">Human Resources</li></a
-                  >
-                  <a href="#" class="navLink"
-                    ><li class="navTextSmall">Management Consulting</li></a
-                  >
-                  <a href="#" class="navLink"
-                    ><li class="navTextSmall">Finance Consulting</li></a
-                  >
-                  <a href="#" class="navLink"
-                    ><li class="navTextSmall">Training</li></a
-                  >
-                </ul>
-              </li></a
-            >
-            <a href="#" class="navLink"><li class="navText">CONTACT</li></a>
-            <a href="#" class="navLink" target="_blank"
-              ><li class="navText">CAREERS</li></a
-            >
-            <a href="#" class="navLink">
-              <img class="linkedinTop" src="./images/linkedin.png"
-            /></a>
-            <a href="#" class="navLink">
-              <img class="facebookTop" src="./images/facebook.png"
-            /></a>
-          </ul>
-        </nav>
-      </div>
-      <div class="headerContent container">
-        <h1 class="headerTitle">Solving Complexity Through Collaboration</h1>
-        <p class="headerText">
-          YOU HAVE THE VISION. WE HAVE THE COMPLETE SOLUTIONS TO GET YOU THERE.
-        </p>
-        <button class="mainButton">
-          <a href="#" class="mainButtonText">What we offer</a>
-        </button>
-      </div>
-    </header>
-    <section class="brownSection container businessKnows">
-      <div class="leftContent">
-        <h2 class="titleWithLine">EVERY GREAT BUSINESS KNOWS THAT</h2>
-        <h1 class="mainTitle white">
-          In order to build, you must have a strong foundation!
-        </h1>
-      </div>
-      <div class="rightContent">
-        <p class="ordinaryText">
-          That’s where we come in. From our comprehensive HR expertise,
-          excellent financial services to our unparalleled training programs, we
-          give your business, and employees, tailored solutions to help you grow
-          successfully.
-        </p>
-      </div>
-    </section>
-    <section class="creamSection container weAreYourSolution">
-      <div class="leftContent">
-        <h2 class="titleWithLine">Global Support Multisourcing</h2>
-        <h1 class="mainTitle red">
-          We are your solution!
-        </h1>
-        <div class="listWithYellowDots">
-          <ul class="list">
-            <div class="dotAndList">
-
-            </div>
-            <li class="listItem">We encourage autonomy (DO IT YOURSELF) and taking responsibility for our actions.</li>
-            <li class="listItem">We are responsible</li>
-            <li class="listItem">We encourage personal and professional development</li>
-            <li class="listItem">We are passionate about our work.</li>
-            <li class="listItem">We believe in what we do.</li>
-          </ul>
+          </nav>
+        </div>
+        <div class="headerContent container">
+          <h1 class="headerTitle">Solving Complexity Through Collaboration</h1>
+          <p class="headerText">
+            YOU HAVE THE VISION. WE HAVE THE COMPLETE SOLUTIONS TO GET YOU
+            THERE.
+          </p>
+          <button class="mainButton">
+            <a href="#" class="mainButtonText">What we offer</a>
+          </button>
         </div>
       </div>
-      <div class="rightContent">
-        <img class="weAreYourSolutionImg" src="./images/mensHandShake.png" style="max-width: 100px;"/>
+    </header>
+    <section class="brownSection">
+      <div class="desktopWrapper">
+        <div class="businessKnows container">
+          <div class="leftContent">
+            <h2 class="titleWithLine">EVERY GREAT BUSINESS KNOWS THAT</h2>
+            <h1 class="white mainTitle businessKnowsTitle">
+              In order to build, you must have a strong foundation!
+            </h1>
+          </div>
+          <div class="rightContent">
+            <p class="ordinaryText">
+              That’s where we come in. From our comprehensive HR expertise,
+              excellent financial services to our unparalleled training
+              programs, we give your business, and employees, tailored solutions
+              to help you grow successfully.
+            </p>
+          </div>
+        </div>
       </div>
     </section>
+    <section class="creamSectionWithPhoto">
+      <div class="weAreYourSolution">
+        <div class="rightContentPhoto">
+          <img class="weAreYourSolutionImg" src="./images/mensHandShake.png" />
+        </div>
+        <div class="leftContentWithPhoto container">
+          <h2 class="titleWithLine">Global Support Multisourcing</h2>
+          <h1 class="mainTitle red">We are your solution!</h1>
+          <div class="listWithYellowDots">
+            <ul class="list">
+              <div class="pointAndList">
+                <div class="yellowPoint"></div>
+                <li class="listItem">
+                  We encourage autonomy (DO IT YOURSELF) and taking
+                  responsibility for our actions.
+                </li>
+              </div>
+              <div class="pointAndList">
+                <div class="yellowPoint"></div>
+                <li class="listItem">We are responsible</li>
+              </div>
+              <div class="pointAndList">
+                <div class="yellowPoint"></div>
+                <li class="listItem">
+                  We encourage personal and professional development
+                </li>
+              </div>
+              <div class="pointAndList">
+                <div class="yellowPoint"></div>
+
+                <li class="listItem">We are passionate about our work.</li>
+              </div>
+              <div class="pointAndList">
+                <div class="yellowPoint"></div>
+                <li class="listItem">We believe in what we do.</li>
+              </div>
+            </ul>
+          </div>
+          <button class="mainButton">
+            <a href="#" class="mainButtonText">Learn more about us</a>
+          </button>
+        </div>
+      </div>
+    </section>
+    <section class="brownSectionWithPhoto">
+      <div class="whatWeOfferBlock">
+        <div class="rightContentPhoto">
+          <img
+            class="weAreYourSolutionImg"
+            src="./images/manTalkingPhone.png"
+          />
+        </div>
+        <div class="leftContentWithPhoto container">
+          <h2 class="titleWithLine">Our Services</h2>
+          <h1 class="mainTitle white">What We Offer</h1>
+          <p class="ordinaryText marginForButton">
+            Our vision, mission and values are customer and results oriented and
+            our services help you reach the goals you have set for your
+            business!
+          </p>
+          <button class="mainButton">
+            <a href="#" class="mainButtonText">Discover</a>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <div class="humanResoursesBlock trainingBlock">
+      <section class="creamSectionWithPhoto flex">
+        <div class="rightContentPhotoLitle">
+          <img
+            class="weAreYourSolutionImg"
+            src="./images/woomenWithTelTablet.png"
+          />
+        </div>
+        <div class="leftContentWithPhotoLitle">
+          <h1 class="mainTitle red">Human Resources</h1>
+
+          <div class="linkWithArrow">
+            <a href="#" class="arrowLinkText">See more</a>
+          </div>
+        </div>
+      </section>
+      <section class="brownSectionWithPhoto flex">
+        <div class="rightContentPhotoLitle">
+          <img class="weAreYourSolutionImg" src="./images/oldManTalking.png" />
+        </div>
+        <div class="leftContentWithPhotoLitle litle">
+          <h1 class="mainTitle white">Training</h1>
+
+          <div class="linkWithArrow">
+            <a href="#" class="arrowLinkText">See more</a>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- <div class="desktopWrapper"></div> -->
+    <div class="managementConsultingBlock financeConsultingBlock">
+      <section class="brownSectionWithPhoto flex">
+        <div class="rightContentPhotoLitle">
+          <img class="weAreYourSolutionImg" src="./images/conversation.png" />
+        </div>
+        <div class="leftContentWithPhotoLitle litle">
+          <h1 class="mainTitle white">Management Consulting</h1>
+
+          <div class="linkWithArrow">
+            <a href="#" class="arrowLinkText">See more</a>
+          </div>
+        </div>
+      </section>
+      <section class="creamSectionWithPhoto flex">
+        <div class="rightContentPhotoLitle">
+          <img class="weAreYourSolutionImg" src="./images/laptop.png" />
+        </div>
+        <div class="leftContentWithPhotoLitle litle">
+          <h1 class="mainTitle red">Finance Consulting</h1>
+
+          <div class="linkWithArrow">
+            <a href="#" class="arrowLinkText">See more</a>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <section class="goldCarrerBlock">
+      <div class="carrerBlockDesktop">
+        <div class="leftContent">
+          <h1 class="mainTitle black careersTitle">
+            Looking for a job opportunity?
+          </h1>
+        </div>
+        <div class="rightContent">
+          <button class="mainButton redBg">
+            <a href="#" class="mainButtonText">See our open positions</a>
+          </button>
+        </div>
+      </div>
+    </section>
+    <section class="creamSectionWithPhoto contactUsBlock">
+      <div class="leftContentWithPhoto container">
+        <h2 class="titleWithLine">Interested in working with us?</h2>
+        <h1 class="mainTitle black">Here to help your business</h1>
+
+        <div class="contacts">
+          <ul class="list">
+            <div class="typeOfContactAndDetails">
+              <p class="typeOfContact">Phone:</p>
+              <li class="contactDetails">+ 37 368 68 38 24</li>
+            </div>
+            <div class="typeOfContactAndDetails">
+              <p class="typeOfContact">Email:</p>
+              <li class="contactDetails">office@extend.support.com</li>
+            </div>
+            <div class="typeOfContactAndDetails">
+              <p class="typeOfContact">Address:</p>
+              <li class="contactDetails">
+                MD-2001, 17 Mihail Kogalniceanu street, of.21 Chisinau, Moldova
+              </li>
+            </div>
+          </ul>
+        </div>
+
+        <button class="mainButton">
+          <a href="#" class="mainButtonText">Get in touch</a>
+        </button>
+      </div>
+      <div class="rightContentPhoto bottom">
+        <img class="weAreYourSolutionImg" src="./images/mapMobile.png" />
+      </div>
+    </section>
+    <footer class="footer container">
+      <div class="logoFooterBlock">
+        <img class="logoFooter" src="./images//mainLogo.png" />
+      </div>
+      <div class="footerContentBlock">
+        <div class="quickLinksBlock">
+          <h1 class="footerTitle">Quick Links</h1>
+          <ul class="linksList">
+            <a href="#" class="navLinkFooter"
+              ><li class="navTextFooter">Home</li></a
+            >
+            <a href="#" class="navLinkFooter"
+              ><li class="navTextFooter">About Us</li></a
+            >
+            <a href="#" class="navLinkFooter"
+              ><li class="navTextFooter">What We Offer</li></a
+            >
+            <a href="#" class="navLinkFooter"
+              ><li class="navTextFooter">Careers</li></a
+            >
+            <a href="#" class="navLinkFooter"
+              ><li class="navTextFooter">Contact</li></a
+            >
+            <a href="#" class="navLinkFooter">
+              <img class="linkedinBot" src="./images/linkedin.png"
+            /></a>
+            <a href="#" class="navLinkFooter">
+              <img class="facebookBot" src="./images/facebook.png"
+            /></a>
+          </ul>
+        </div>
+        <div class="footerContactBlock">
+          <h1 class="footerTitle">Contact</h1>
+          <ul class="list">
+            <div class="typeOfContactAndDetailsFooter">
+              <p class="typeOfContact">Phone:</p>
+              <li class="contactDetails">+ 37 368 68 38 24</li>
+            </div>
+            <div class="typeOfContactAndDetailsFooter">
+              <p class="typeOfContact">Email:</p>
+              <li class="contactDetails">office@extend.support.com</li>
+            </div>
+            <div class="typeOfContactAndDetailsFooter">
+              <p class="typeOfContact">Address:</p>
+              <li class="contactDetails">
+                MD-2001, 17 Mihail Kogalniceanu street, of.21 Chisinau, Moldova
+              </li>
+            </div>
+          </ul>
+          <a href="#" class="footerLink">Get in touch</a>
+          <a href="#" class="footerLink">Privacy Policy</a>
+        </div>
+      </div>
+      <div class="copyrigthBlock">
+        <p class="footerCopyrigth">
+          Copyright © 2020 Extend Support Multisourcing
+        </p>
+      </div>
+    </footer>
 
     <script src="js/jquery.js"></script>
     <script type="text/javascript" src="/geo.js"></script>
