@@ -15,7 +15,7 @@
     padding: 30px 40px;
   }
   .header {
-    background-image: url("../images/managment_bg_tablet.png");
+    background-image: url("../images/contact_bg_tab.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center top;
@@ -60,7 +60,7 @@
   }
   .mainButton {
     width: 100%;
-    max-width: 150px;
+    max-width: 250px;
   }
   .brownSection {
     padding-top: 80px;
