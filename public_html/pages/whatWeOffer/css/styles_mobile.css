@@ -65,6 +65,11 @@
   flex-direction: column;
 }
 
+.headerNavSubblock {
+  display: flex;
+  flex-direction: column;
+}
+
 .ordinaryLink {
   text-decoration: none;
   margin-bottom: 20px;
