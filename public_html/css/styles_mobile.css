@@ -17,7 +17,7 @@
 }
 
 .header {
-  background-image: url("../images/main_bg_mobile.png");
+  background-image: url("../images/managment_bg_mobile.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center top;
@@ -27,10 +27,11 @@
 .topBlock {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 40px;
 }
 
 .logoImgTop {
-  max-width: 100px;
+  max-width: 130px;
   z-index: 100;
 }
 
@@ -51,7 +52,20 @@
   font-family: "Cardo";
   text-transform: uppercase;
   color: white;
+  margin-bottom: 40px;
+}
+
+.headerListItem:not(:last-child) {
   margin-bottom: 20px;
+}
+
+.headerListItemLink {
+  font-family: "Prompt";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  color: #F0D57D;
+  text-decoration: none;
 }
 
 .headerText {
@@ -75,7 +89,6 @@
 }
 
 .mainButtonText {
-  text-transform: uppercase;
   text-decoration: none;
   color: white;
   font-size: 16px;
@@ -95,6 +108,9 @@
   font-size: 12px;
   margin-left: 30px;
   margin-bottom: 10px;
+}
+.letter {
+  letter-spacing: 2px;
 }
 
 .titleWithLine::before {
@@ -139,6 +155,17 @@
   line-height: 1.9;
   color: white;
 }
+.contentText {
+  font-family: "Prompt";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 27px;
+  color: #240B0C;
+}
+.contentText {
+  margin-bottom: 10px;
+}
 
 .creamSectionWithPhoto {
   background-color: #fef8ee;
@@ -171,9 +198,10 @@
   margin-bottom: 10px;
 }
 
-.weAreYourSolutionImg {
+.createChangesThatMattersImg {
   width: 100%;
   height: 100%;
+  display: block;
 }
 
 .rightContentPhoto {
@@ -195,6 +223,18 @@
 }
 
 .litle {}
+
+.bottomContent {
+  background-color: #E4CD81;
+  padding: 60px 20px;
+}
+.bottomContentTitle {
+  font-family: "Cardo";
+  font-size: 25px;
+  line-height: 30px;
+  color: #240C0C;
+  margin-bottom: 50px;
+}
 
 .marginForButton {
   margin-bottom: 40px;
@@ -350,4 +390,5 @@
 .footerCopyrigth {
   color: #d0ac5b;
   font-size: 15px;
+  line-height: 27px;
 }

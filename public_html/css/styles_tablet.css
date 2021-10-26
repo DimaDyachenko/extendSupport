@@ -1,4 +1,4 @@
-@media (min-width: 720px) {
+@media (min-width: 768px) {
   @font-face {
     font-family: "Cardo";
     src: url("../fonts/Cardo-Regular.ttf");
@@ -12,12 +12,20 @@
     font-style: normal;
   }
   .container {
-    padding: 80px 40px;
+    padding: 30px 40px;
   }
   .header {
-    background-image: url("../images/mainBgTablet.png");
-    background-position: bottom center;
+    background-image: url("../images/managment_bg_tablet.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
   }
+  .topBlock {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 140px;
+  }
+
   .logoImgTop {
     max-width: 150px;
   }
@@ -28,6 +36,22 @@
     font-size: 40px;
     line-height: 1.25em;
     margin-bottom: 30px;
+    max-width: 340px;
+  }
+  .headerList {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 472px;
+  }
+  .headerListItem {
+      width: 236px;
+  }
+  .headerListItemLink {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .headerContent {
+    padding-bottom: 280px;
   }
   .headerText {
     font-size: 20px;
@@ -36,7 +60,7 @@
   }
   .mainButton {
     width: 100%;
-    max-width: 250px;
+    max-width: 150px;
   }
   .brownSection {
     padding-top: 80px;
@@ -49,17 +73,17 @@
     position: relative;
     color: #d3b870;
     font-size: 16px;
-    margin-left: 50px;
+    margin-left: 90px;
     letter-spacing: 2px;
   }
   .titleWithLine::before {
-    width: 40px;
-    left: -50px;
+    width: 80px;
+    left: -90px;
     bottom: 8px;
   }
   .mainTitle {
     font-size: 30px;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
   }
   .white {
     color: white;
@@ -105,8 +129,18 @@
   }
   .leftContentWithPhoto {
     margin: 0 !important;
+    padding-top: 80px;
+    padding-bottom: 50px;
    
   }
+  .bottomContentTitle {
+    font-size: 40px;
+    line-height: 44px;
+}
+.bottomContent {
+    padding: 60px 40px;
+
+}
   .leftContentWithPhotoLitle {
     width: calc(50% - 80px);
     padding: 70px 40px 70px 40px;
@@ -138,16 +172,20 @@
     display: flex;
     margin-bottom: 20px;
   }
+  .typeOfContactAndDetailsFooter {
+    max-width: 250px;
+  }
+  
   .typeOfContactAndDetails:last-of-type {
     margin-bottom: 60px;
   }
   .typeOfContact {
     display: block;
-    width: 20%;
+    width: 100%;
   }
   .contactDetails {
     display: block;
-    width: 30%;
+    /* width: 30%; */
   }
   .footer {
     background-color: #240c0c;
@@ -158,19 +196,25 @@
     margin-bottom: 50px;
   }
   .logoFooter {
-    width: 50%;
+    /* width: 50%; */
+    max-width: 334px;
+    /* max-height: 139px; */
     height: auto;
   }
   .footerContentBlock {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     line-height: 24px;
+    padding: 0 40px;
   }
   .footerLink {
     margin-bottom: 50px;
   }
   .footerLink:last-of-type {
     display: none;
+  }
+  .footerCopyrigth {
+    margin-left: 40px;
   }
 }

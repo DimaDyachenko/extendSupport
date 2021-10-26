@@ -1,4 +1,4 @@
-@media (min-width: 1024px) {
+@media (min-width: 1440px) {
   @font-face {
     font-family: "Cardo";
     src: url("../fonts/Cardo-Regular.ttf");
@@ -113,8 +113,10 @@
     transition: 0.2s ease-in-out;
   }
   .header {
-    background-image: url("../images/mainBgTablet.png");
-    background-position: center center;
+    background-image: url("../images/managment_bg_desktop.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
   }
   .logoImgTop {
     max-width: 150px;
@@ -153,7 +155,7 @@
     font-size: 50px;
     line-height: 1.25em;
     margin-bottom: 20px;
-    max-width: 750px;
+    max-width: 760px;
   }
   .headerText {
     font-size: 20px;
@@ -174,11 +176,11 @@
     position: relative;
     color: #d3b870;
     font-size: 16px;
-    margin-left: 60px;
+    margin-left: 90px;
     letter-spacing: 2px;
   }
   .titleWithLine::before {
-   left: -60px;
+   left: -90px;
     bottom: 10px;
   }
   .mainTitle {
@@ -253,6 +255,9 @@
     height: auto;
     display: block;
   }
+  .createChangesThatMatters {
+    display: flex;
+  }
   .leftContentWithPhoto {
     width: calc(50% - 240px);
     margin: 0 !important;
@@ -264,6 +269,20 @@
     padding: 70px 40px 70px 40px;
     align-self: center;
   }
+  .bottomContent {
+    display: flex;
+    justify-content: space-between;
+    padding: 70px 80px;
+  }
+
+  .bottomContentTitle {
+    margin-bottom: 0;
+  }
+
+
+
+
+
   .humanResoursesBlock, .trainingBlock, .managementConsultingBlock, .financeConsultingBlock {
     display: flex;
     flex-direction: row-reverse;
@@ -330,12 +349,12 @@
     margin-bottom: 50px;
   }
   .logoFooter {
-    width: 50%;
-    height: auto;
+    max-width: 407px;
   }
   .footerContentBlock {
     display: flex;
     justify-content: space-between;
+    padding: 0 275px;
   }
 
   .quickLinksBlock, .footerContactBlock {
