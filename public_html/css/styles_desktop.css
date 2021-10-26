@@ -113,7 +113,7 @@
     transition: 0.2s ease-in-out;
   }
   .header {
-    background-image: url("../images/contact_bg_desk.png");
+    background-image: url("../images/careers_bg_desk.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center top;
@@ -371,5 +371,18 @@
   .footerLink:last-of-type {
     display: block;
     margin-bottom: 0;
+  }
+  .mainContent {
+    display: flex;
+  }
+  .leftContentPhoto {
+    width: 50%;
+  }
+  .blackWhiteBlockWrapper {
+    width: 50%;
+    flex-direction: column;
+  }
+  .blackBlock, .whiteBlock {
+    width: 100%;
   }
 }

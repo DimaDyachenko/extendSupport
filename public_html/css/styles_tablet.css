@@ -15,7 +15,7 @@
     padding: 30px 40px;
   }
   .header {
-    background-image: url("../images/contact_bg_tab.png");
+    background-image: url("../images/careers_bg_tab.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center top;
@@ -216,5 +216,17 @@
   }
   .footerCopyrigth {
     margin-left: 40px;
+  
   }
+  .titleWrapper {
+    padding: 80px 40px;
+  }
+  .blackWhiteBlockWrapper {
+    display: flex;
+  }
+  .blackBlock, .whiteBlock {
+    width: 50%;
+    padding: 80px 50px;
+  }
+
 }

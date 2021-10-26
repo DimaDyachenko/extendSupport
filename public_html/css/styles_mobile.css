@@ -17,7 +17,7 @@
 }
 
 .header {
-  background-image: url("../images/contact_bg_mob.png");
+  background-image: url("../images/careers_bg_mob.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center top;
@@ -231,6 +231,9 @@
   display: block;
 }
 
+.titleWrapper {
+  padding: 60px 20px;
+}
 .rightContentPhoto {
 }
 
@@ -420,4 +423,32 @@
   color: #d0ac5b;
   font-size: 15px;
   line-height: 27px;
+}
+.blackWhiteBlockWrapperTitle {
+  font-family: "Cardo";
+  font-size: 40px;
+  line-height: 44px;
+  color: #FEF8EE;
+  font-weight: normal;
+  margin-bottom: 40px;
+}
+.red {
+  color: #9A312E;
+}
+
+.blackBlock {
+  padding: 54px 20px;
+  background-color: #240C0C;
+}
+.blackWhiteBlockWrapperLink {
+  text-transform: uppercase;
+  color: #D0AC5B;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 2px;
+  text-decoration: none;
+}
+.whiteBlock {
+  padding: 54px 20px;
+  background-color: #FEF8EE;
 }
