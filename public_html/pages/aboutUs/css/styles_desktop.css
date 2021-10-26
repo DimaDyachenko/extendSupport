@@ -39,7 +39,7 @@
   }
   .navText {
     position: relative !important;
-    
+
     font-size: 16px !important;
     line-height: 1.9em;
     color: white;
@@ -47,7 +47,7 @@
     transition: 0.3s ease-in-out;
   }
   .navText::after {
-    content: '';
+    content: "";
     position: absolute;
     display: block;
     top: 100%;
@@ -90,7 +90,12 @@
     min-width: 15px;
     min-height: 10px;
     height: 10px;
-    background-image: linear-gradient(to right bottom, transparent 50%, #d3b870 0), linear-gradient(to right top, #d3b870 50%, transparent 0);
+    background-image: linear-gradient(
+        to right bottom,
+        transparent 50%,
+        #d3b870 0
+      ),
+      linear-gradient(to right top, #d3b870 50%, transparent 0);
     background-size: 50% 100%;
     background-repeat: no-repeat;
     background-position: left, right;
@@ -146,13 +151,14 @@
     margin-right: 40px !important;
   }
 
-  .linkedinTop,.facebookTop {
+  .linkedinTop,
+  .facebookTop {
     margin-top: 0 !important;
     transform: translateY(50%);
   }
-.headerContent {
-  padding: 120px 80px 200px ;
-}
+  .headerContent {
+    padding: 120px 80px 200px;
+  }
 
   .headerTitle {
     font-size: 50px;
@@ -169,9 +175,7 @@
     width: 100%;
     max-width: 250px;
   }
-  .brownSection {
-    padding: 0 !important;
-  }
+
   .marginForButton {
     width: 60%;
   }
@@ -183,7 +187,7 @@
     letter-spacing: 2px;
   }
   .titleWithLine::before {
-   left: -60px;
+    left: -60px;
     bottom: 10px;
   }
   .mainTitle {
@@ -209,7 +213,7 @@
   }
   .red {
     color: #9a312e;
-    font-size: 40px;
+    font-size: 40px !important;
   }
   .black {
     color: black;
@@ -219,8 +223,9 @@
     margin: 40px -40px -50px !important;
   }
 
-  .rightContent,.leftContent {
-   width: 100%;
+  .rightContent,
+  .leftContent {
+    width: 100%;
     max-width: 450px;
   }
 
@@ -230,20 +235,28 @@
     /* justify-content: center; */
   }
 
+  .whatWeOfferBlock {
+    padding: 0 120px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+  }
 
-.whatWeOfferBlock {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row-reverse;
-}
+  .customerOrientation {
+    display: flex;
+    flex-direction: row-reverse;
+  }
 
+  .resultsOriented {
+    display: flex;
+  }
 
   .listWithYellowDots {
     margin-bottom: 60px;
   }
   .listItem {
     margin-left: 15px;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
   }
   .weAreYourSolutionImg {
     width: 100%;
@@ -269,24 +282,65 @@
     padding: 70px 40px 70px 40px;
     align-self: center;
   }
-  .humanResoursesBlock, .trainingBlock, .managementConsultingBlock, .financeConsultingBlock {
+  .humanResoursesBlock,
+  .trainingBlock,
+  .managementConsultingBlock,
+  .financeConsultingBlock {
     display: flex;
     flex-direction: row-reverse;
     width: 100%;
     height: 100%;
     margin: 0 !important;
   }
-  .trainingBlock, .humanResoursesBlock {
+  .trainingBlock,
+  .humanResoursesBlock {
     flex-direction: row;
   }
 
-  .managementConsultingBlock, .financeConsultingBlock {
+  .managementConsultingBlock,
+  .financeConsultingBlock {
     flex-direction: row;
   }
 
   .flex {
     display: flex;
     width: 50%;
+  }
+
+  .flex:nth-of-type(2) {
+    flex-direction: row;
+  }
+
+  .desktopCardFlexRow {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .whatWeOfferBlock,
+  .progressBarsBlock {
+ 
+    flex-direction: row;
+  }
+
+  .whatWeOfferTitle {
+    font-size: 40px !important;
+  }
+
+  .carrerBlockDesktop .rightContent {
+    width: unset;
+  }
+
+  .carrerBlockDesktop .rightContent .mainButton {
+    padding: 10px 20px;
+  }
+
+  .titleAndButtonBlock {
+    display: block;
+    width: 50%;
+  }
+  .progressBarsBlock {
+    width: 50%;
+    margin-top: 0;
   }
   .goldCarrerBlock {
     padding: 30px 0;
@@ -343,7 +397,8 @@
     justify-content: space-between;
   }
 
-  .quickLinksBlock, .footerContactBlock {
+  .quickLinksBlock,
+  .footerContactBlock {
     width: 100%;
   }
 

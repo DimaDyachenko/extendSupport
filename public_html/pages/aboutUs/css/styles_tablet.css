@@ -45,8 +45,7 @@
     max-width: 250px;
   }
   .brownSection {
-    padding-top: 80px;
-    padding-bottom: 80px;
+  
   }
   .marginForButton {
     width: 60%;
@@ -64,8 +63,8 @@
     bottom: 8px;
   }
   .mainTitle {
-    font-size: 30px;
-    margin-bottom: 40px;
+    font-size: 25px !important;
+    
   }
   .white {
     color: white;
@@ -104,6 +103,11 @@
     flex-direction: row;
     display: flex;
   }
+
+  .responsibleCard {
+    width: 50%;
+    height: auto;
+  }
   .rightContentPhotoLitle {
     width: 50%;
     height: auto;
@@ -135,10 +139,18 @@
   }
   .careersTitle {
     margin-bottom: 50px;
-    font-size: 40px;
+    font-size: 40px !important;
   }
-  .contactUsBlock {
-    /* padding: 30px 40px 0; */
+  .titleAndButtonBlock {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .whatWeOfferTitle {
+
+  }
+  .whatWeOfferBlock {
+    padding: 0 40px;
   }
   .typeOfContactAndDetails {
     display: flex;

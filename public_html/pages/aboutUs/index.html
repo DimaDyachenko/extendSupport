@@ -32,7 +32,7 @@
 
   <body>
     <header class="header">
-      <div class="desktopWrapper ">
+      <div class="desktopWrapper">
         <div class="topBlock container">
           <img class="logoImgTop" src="./images/mainLogo.png" />
           <nav role="navigation" class="nav">
@@ -153,22 +153,29 @@
         </div>
       </div>
     </header>
-    <section class="brownSection responsibleCard">
-      <h2 class="titleWithLine noLine">We are</h2>
-      <h1 class="mainTitle white">Responsible</h1>
-    </section>
-    <section class="creamSection responsibleCard">
-      <h2 class="titleWithLine noLine">We encourage</h2>
-      <h1 class="mainTitle black">Personal and Professional Development</h1>
-    </section>
-    <section class="brownSection responsibleCard">
-      <h2 class="titleWithLine noLine">We are</h2>
-      <h1 class="mainTitle white">Passionate About Our Work</h1>
-    </section>
-    <section class="creamSection responsibleCard">
-      <h2 class="titleWithLine noLine">We believe</h2>
-      <h1 class="mainTitle black">In What We Do</h1>
-    </section>
+    <div class="desktopCardFlexRow">
+      <div class="flex">
+        <section class="brownSection responsibleCard">
+          <h2 class="titleWithLine noLine">We are</h2>
+          <h1 class="mainTitle white">Responsible</h1>
+        </section>
+        <section class="creamSection responsibleCard">
+          <h2 class="titleWithLine noLine">We encourage</h2>
+          <h1 class="mainTitle black">Personal and Professional Development</h1>
+        </section>
+      </div>
+      <div class="flex">
+        <section class="brownSection responsibleCard">
+          <h2 class="titleWithLine noLine">We are</h2>
+          <h1 class="mainTitle white">Passionate About Our Work</h1>
+        </section>
+        <section class="creamSection responsibleCard">
+          <h2 class="titleWithLine noLine">We believe</h2>
+          <h1 class="mainTitle black">In What We Do</h1>
+        </section>
+      </div>
+    </div>
+
     <section class="creamSectionWithPhoto">
       <div class="customerOrientation">
         <div class="rightContentPhoto">
@@ -216,10 +223,7 @@
     <section class="creamSectionWithPhoto">
       <div class="resultsOriented">
         <div class="rightContentPhoto">
-          <img
-            class="weAreYourSolutionImg"
-            src="./images/writingTestImg.png"
-          />
+          <img class="weAreYourSolutionImg" src="./images/writingTestImg.png" />
         </div>
         <div class="leftContentWithPhoto container">
           <h2 class="titleWithLine">Values, Vision & Mission</h2>
@@ -228,27 +232,22 @@
             <ul class="list">
               <div class="pointAndList">
                 <img class="checkmark" src="./images/checkmark.png" />
-                <li class="listItem">
-                  The results matter!
-                </li>
+                <li class="listItem">The results matter!</li>
               </div>
               <div class="pointAndList">
                 <img class="checkmark" src="./images/checkmark.png" />
-                <li class="listItem">
-                  We do more with less
-                </li>
+                <li class="listItem">We do more with less</li>
               </div>
               <div class="pointAndList">
                 <img class="checkmark" src="./images/checkmark.png" />
-                <li class="listItem">
-                  We work with a sense of emergency
-                </li>
+                <li class="listItem">We work with a sense of emergency</li>
               </div>
               <div class="pointAndList">
                 <img class="checkmark" src="./images/checkmark.png" />
 
                 <li class="listItem">
-                  Any difficult situation is an opportunity for development and finding solutions
+                  Any difficult situation is an opportunity for development and
+                  finding solutions
                 </li>
               </div>
             </ul>
@@ -259,8 +258,8 @@
     <section class="brownSection">
       <div class="whatWeOfferBlock">
         <div class="titleAndButtonBlock">
-          <h1 class="mainTitle white">What We Offer</h1>
-          <button class="mainButton ">
+          <h1 class="mainTitle white whatWeOfferTitle">What We Offer</h1>
+          <button class="mainButton">
             <a href="#" class="mainButtonText">Our Services</a>
           </button>
         </div>
@@ -306,7 +305,7 @@
         </div>
       </div>
     </section>
-    
+
     <footer class="footer container">
       <div class="logoFooterBlock">
         <img class="logoFooter" src="./images//mainLogo.png" />
