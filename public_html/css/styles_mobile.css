@@ -17,7 +17,7 @@
 }
 
 .header {
-  background-image: url("../images/recruiter_bg_mob.png");
+  background-image: url("../images/policy_bg_mob.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center top;
@@ -226,6 +226,7 @@
   font-size: 15px;
   line-height: 27px;
   color: #240b0c;
+  word-break: break-word;
 }
 
 .createChangesThatMattersImg {
@@ -524,4 +525,17 @@
   line-height: 27px;
   text-decoration-line: underline;
   color: #962a2f;
+}
+.contentBlock {
+  margin-bottom: 30px;
+}
+.contentBlock:last-child {
+  margin-bottom: 80px;
+}
+.contentBlockList {
+  list-style-type: decimal;
+  margin-left: 20px;
+}
+.contentBlockListItem {
+  margin-bottom: 10px;
 }

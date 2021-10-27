@@ -15,7 +15,7 @@
     padding: 30px 40px;
   }
   .header {
-    background-image: url("../images/recruiter_bg_tab.png");
+    background-image: url("../images/policy_bg_tab.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center top;
@@ -229,7 +229,7 @@
     padding: 80px 50px;
   }
   .wrapper {
-    padding: 70px 80px 15px;
+    padding: 80px 40px 0;
   }
   .formContainer {
     padding: 60px;

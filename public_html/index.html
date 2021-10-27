@@ -1,106 +1,64 @@
 <!DOCTYPE html>
 <html lang="eng" data-livestyle-extension="available">
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Welcome!</title>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
-    <!-- <link rel="icon" href="favicon.ico" /> -->
-    <link rel="stylesheet" href="/reg-form/intlTelInput.css" />
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/styles_mobile.css" />
-    <link rel="stylesheet" href="css/styles_tablet.css" />
-    <link rel="stylesheet" href="css/styles_desktop.css" />
-    <link rel="stylesheet" href="css/burger.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Welcome!</title>
 
-    <!-- AUTOPIXEL -->
-    <script>
-      let url =
-        window.location.protocol + "//" + window.location.host + "/pixel.js";
-      let request = new XMLHttpRequest();
-      request.open("GET", url, false);
-      request.send(null);
-      if (request.status === 200) {
-        let template = document.createElement("script");
-        template.innerHTML = request.responseText;
-        document.getElementsByTagName("head")[0].appendChild(template);
-      }
-    </script>
-    <!-- END OF AUTOPIXEL -->
-  </head>
+  <!-- <link rel="icon" href="favicon.ico" /> -->
+  <link rel="stylesheet" href="/reg-form/intlTelInput.css" />
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/styles_mobile.css" />
+  <link rel="stylesheet" href="css/styles_tablet.css" />
+  <link rel="stylesheet" href="css/styles_desktop.css" />
+  <link rel="stylesheet" href="css/burger.css" />
 
-  <body>
-    <header class="header">
-      <div class="desktopWrapper">
-        <div class="topBlock container">
-          <img class="logoImgTop" src="./images/mainLogo.png" />
-          <nav role="navigation" class="nav">
-            <div id="menuToggle" class="burgerMenu">
-              <!--
+  <!-- AUTOPIXEL -->
+  <script>
+    let url =
+      window.location.protocol + "//" + window.location.host + "/pixel.js";
+    let request = new XMLHttpRequest();
+    request.open("GET", url, false);
+    request.send(null);
+    if (request.status === 200) {
+      let template = document.createElement("script");
+      template.innerHTML = request.responseText;
+      document.getElementsByTagName("head")[0].appendChild(template);
+    }
+  </script>
+  <!-- END OF AUTOPIXEL -->
+</head>
+
+<body>
+  <header class="header">
+    <div class="desktopWrapper">
+      <div class="topBlock container">
+        <img class="logoImgTop" src="./images/mainLogo.png" />
+        <nav role="navigation" class="nav">
+          <div id="menuToggle" class="burgerMenu">
+            <!--
               A fake / hidden checkbox is used as click reciever,
               so you can use the :checked selector on it.
               -->
-              <input type="checkbox" />
+            <input type="checkbox" />
 
-              <!--
+            <!--
               Some spans to act as a hamburger.
               
               They are acting like a real hamburger,
               not that McDonalds stuff.
               -->
-              <span></span>
-              <span></span>
-              <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
 
-              <!--
+            <!--
               Too bad the menu has to be inside of the button
               but hey, it's pure CSS magic.
               -->
-              <ul id="menu" class="navList">
-                <a href="#" class="navLink">
-                  <li class="navText">HOME</li>
-                </a>
-                <a href="#" class="navLink">
-                  <li class="navText">ABOUT US</li>
-                </a>
-                <a href="#" class="navLink innerMenu">
-                  <li class="navText accordion">
-                    WHAT WE OFFER
-                    <div class="triangle"></div>
-                    <ul id="menuInMenu" class="navInnerList panel">
-                      <a href="#" class="navLink">
-                        <li class="navTextSmall">Human Resources</li>
-                      </a>
-                      <a href="#" class="navLink">
-                        <li class="navTextSmall">Management Consulting</li>
-                      </a>
-                      <a href="#" class="navLink">
-                        <li class="navTextSmall">Finance Consulting</li>
-                      </a>
-                      <a href="#" class="navLink">
-                        <li class="navTextSmall">Training</li>
-                      </a>
-                    </ul>
-                  </li>
-                </a>
-                <a href="#" class="navLink">
-                  <li class="navText">CONTACT</li>
-                </a>
-                <a href="#" class="navLink">
-                  <li class="navText careers">CAREERS</li>
-                </a>
-                <a href="#" class="navLink">
-                  <img class="linkedinTop" src="./images/linkedin.png"
-                /></a>
-                <a href="#" class="navLink">
-                  <img class="facebookTop" src="./images/facebook.png"
-                /></a>
-              </ul>
-            </div>
-          </nav>
-          <nav class="desktopNav">
-            <ul class="navList">
+            <ul id="menu" class="navList">
               <a href="#" class="navLink">
                 <li class="navText">HOME</li>
               </a>
@@ -111,8 +69,7 @@
                 <li class="navText accordion">
                   WHAT WE OFFER
                   <div class="triangle"></div>
-                  <ul class="navInnerList panel">
-                    <div class="triangleAccordion"></div>
+                  <ul id="menuInMenu" class="navInnerList panel">
                     <a href="#" class="navLink">
                       <li class="navTextSmall">Human Resources</li>
                     </a>
@@ -132,224 +89,290 @@
                 <li class="navText">CONTACT</li>
               </a>
               <a href="#" class="navLink">
-                <li class="navText careersDesktop">CAREERS</li>
+                <li class="navText careers">CAREERS</li>
               </a>
               <a href="#" class="navLink">
-                <img class="linkedinTop" src="./images/linkedin.png"
-              /></a>
+                <img class="linkedinTop" src="./images/linkedin.png" /></a>
               <a href="#" class="navLink">
-                <img class="facebookTop" src="./images/facebook.png"
-              /></a>
+                <img class="facebookTop" src="./images/facebook.png" /></a>
             </ul>
-          </nav>
-        </div>
-        <div class="headerContent container">
-          <h2 class="titleWithLine">JOB OPENINGS</h2>
-          <h1 class="headerTitle">HR RECRUITER</h1>
-        </div>
-      </div>
-    </header>
-    <section class="creamSectionWithPhoto">
-      <div class="mainContent">
-      <div class="wrapper">
-        <h1 class="mainTitle red">
-          Responsibilities
-        </h1>
-        <div class="listWithYellowDots">
-          <ul class="list">
-            <div class="pointAndList">
-              <div class="yellowPoint"></div>
-              <li class="listItem">
-                Posting open positions on external and internal platforms
-              </li>
-            </div>
-            <div class="pointAndList">
-              <div class="yellowPoint"></div>
-              <li class="listItem">Screening and Selection of Candidates</li>
-            </div>
-            <div class="pointAndList">
-              <div class="yellowPoint"></div>
-              <li class="listItem">
-                Telephone and Face-to-Face Interview
-              </li>
-            </div>
-            <div class="pointAndList">
-              <div class="yellowPoint"></div>
-
-              <li class="listItem">Communication with management and decision on recruitment strategy, candidate scheduling and final decision</li>
-            </div>
-          </ul>
-        </div>
-        <h1 class="mainTitle red">
-          Candidate Profile / Skills
-        </h1>
-        <div class="listWithYellowDots">
-          <ul class="list">
-            <div class="pointAndList">
-              <div class="yellowPoint"></div>
-              <li class="listItem">
-                Previous experience of 6 months – 1 year (preferably in Recruitment, but not mandatory)
-              </li>
-            </div>
-            <div class="pointAndList">
-              <div class="yellowPoint"></div>
-              <li class="listItem">Excellent communication skills</li>
-            </div>
-            <div class="pointAndList">
-              <div class="yellowPoint"></div>
-              <li class="listItem">
-                Advanced English
-              </li>
-            </div>
-          </ul>
-        </div>
-      </div>
-      <div class="formContainer">
-        <div class="formWrapper">
-        <h1 class="mainTitle red">
-          Send your application:
-        </h1>
-        <form class="">
-          <div class="formInner">
-              <div class="formGroup">
-                  <input type="text" class="field" 
-                          required="required" placeholder="Name" 
-                         pattern="[^0-9!@#\$\^&%\*\(\)\+=\-\[\]\{\}\|:<>\?,\.']+">
-              </div>
-              <div class="formGroup">
-                  <input type="text" class="field w-input gtd-field-lname"  
-                         required="required" placeholder="Surname" 
-                         pattern="[^0-9!@#\$\^&%\*\(\)\+=\-\[\]\{\}\|:<>\?,\.']+">
-              </div>
-              <div class="formGroup">
-                  <input type="email" class="field w-input gtd-field-email"  
-                         required="required" placeholder="Email" 
-                         pattern="[A-Za-z0-9._%+-]{1,}@[a-zA-Z0-9._%+-]{1,}([.]{1}[a-zA-Z]{2,}|[.]{1}[a-zA-Z0-9._%+-]{2,}[.]{1}[a-zA-Z]{2,})">
-              </div>
-              <div class="formGroup">
-                  <input type="tel" class="field w-input gtd-field-tel"  
-                         required="required" placeholder="Phone Number" pattern="[0-9]">
-              </div>
-              <div class="formGroup">
-               <textarea class="field textarea" placeholder="Anything you’d like to mention?"></textarea>
-            </div>
-              <div class="formUploadInput">
-                <label for="input" class="formUploadInputLabel">Attach your CV:
-                <span class="formUploadInputSpan">Выбрать файлы</span>
-              </label>
-                <input id="input" type="file" style="display: none;">
-            </div>
-            <div class="formGroup agreement">
-              <div class="formGroupWrapper">
-              <input type="checkbox" id="checkbox" style="margin-top: 6px;">
-              <label class="formCheckboxText" for="checkbox" >I have read and agree with GSM's</label>
-            </div>
-              <a href="#" class="formCheckboxLink">Privacy Policy!</a>
           </div>
-              <div class="">
-                  <button class="mainButton redBg mainButtonText" 
-                          data-title="SEND YOUR APPLICATION" type="submit">
-                          SEND YOUR APPLICATION!
-                  </button>
-              </div>
-          </div>
-      </form>
-      
-
-        </form>
+        </nav>
+        <nav class="desktopNav">
+          <ul class="navList">
+            <a href="#" class="navLink">
+              <li class="navText">HOME</li>
+            </a>
+            <a href="#" class="navLink">
+              <li class="navText">ABOUT US</li>
+            </a>
+            <a href="#" class="navLink innerMenu">
+              <li class="navText accordion">
+                WHAT WE OFFER
+                <div class="triangle"></div>
+                <ul class="navInnerList panel">
+                  <div class="triangleAccordion"></div>
+                  <a href="#" class="navLink">
+                    <li class="navTextSmall">Human Resources</li>
+                  </a>
+                  <a href="#" class="navLink">
+                    <li class="navTextSmall">Management Consulting</li>
+                  </a>
+                  <a href="#" class="navLink">
+                    <li class="navTextSmall">Finance Consulting</li>
+                  </a>
+                  <a href="#" class="navLink">
+                    <li class="navTextSmall">Training</li>
+                  </a>
+                </ul>
+              </li>
+            </a>
+            <a href="#" class="navLink">
+              <li class="navText">CONTACT</li>
+            </a>
+            <a href="#" class="navLink">
+              <li class="navText careersDesktop">CAREERS</li>
+            </a>
+            <a href="#" class="navLink">
+              <img class="linkedinTop" src="./images/linkedin.png" /></a>
+            <a href="#" class="navLink">
+              <img class="facebookTop" src="./images/facebook.png" /></a>
+          </ul>
+        </nav>
       </div>
+      <div class="headerContent container">
+        <h2 class="titleWithLine">JOB OPENINGS</h2>
+        <h1 class="headerTitle">PRIVACY POLICY</h1>
       </div>
     </div>
-      <div class="bottomContent">
-        <h1 class="bottomContentTitle">Need Our Services? Get in touch!</h1>
-        <button class="mainButton redBg">
-          <a class="mainButtonText" href="#">Contact Us</a>
-        </button>
+  </header>
+  <section class="creamSectionWithPhoto">
+    <div class="wrapper">
+      <div class="contentBlock">
+        <h1 class="mainTitle red">
+          Our site uses cookies.
+        </h1>
+        <p class="contentText">By using our site and accepting this policy, you agree to the use of cookies in
+          accordance with the terms of
+          this policy. If you do not agree with the use of these cookies, please disable them according to the
+          instructions in this Cookie Communication so that the cookies on this site cannot be placed on the device.</p>
+        <p class="contentText">Gsm-ro.com uses cookies to provide you with a pleasant browsing experience and to allow
+          you to interact with
+          the elements of the website (for example: sending requests to monitor the performance of the website and
+          improving its quality, etc.).</p>
+        <p class="contentText">Because we give transparency to you, we present some useful information about cookies</p>
       </div>
-    </section>
-    <footer class="footer container">
-      <div class="logoFooterBlock">
-        <img class="logoFooter" src="./images//mainLogo.png" />
+
+      <div class="contentBlock">
+        <h1 class="mainTitle red">
+          What is cookie?
+        </h1>
+        <p class="contentText">We try to make your experience as simple and useful as possible when interacting with the
+          gsm-ro.com website. When you visit gsm-ro.com, our server sends a cookie to your computer. Cookies are used to
+          store information and sometimes to track information about using gsm-ro.com. There are cookies that expire
+          when you close your browser, while others are used to remember certain information for your next visit to
+          gsm-ro.com, and these expire after a while. Cookies can be set by the website you visit (“internal cookies”)
+          or can be set by other websites that display information on the page you visit (“external cookies”).</p>
       </div>
-      <div class="footerContentBlock">
-        <div class="quickLinksBlock">
-          <h1 class="footerTitle">Quick Links</h1>
-          <ul class="linksList">
-            <a href="#" class="navLinkFooter"
-              ><li class="navTextFooter">Home</li></a
-            >
-            <a href="#" class="navLinkFooter"
-              ><li class="navTextFooter">About Us</li></a
-            >
-            <a href="#" class="navLinkFooter"
-              ><li class="navTextFooter">What We Offer</li></a
-            >
-            <a href="#" class="navLinkFooter"
-              ><li class="navTextFooter">Careers</li></a
-            >
-            <a href="#" class="navLinkFooter"
-              ><li class="navTextFooter">Contact</li></a
-            >
-            <a href="#" class="navLinkFooter">
-              <img class="linkedinBot" src="./images/linkedin.png"
-            /></a>
-            <a href="#" class="navLinkFooter">
-              <img class="facebookBot" src="./images/facebook.png"
-            /></a>
-          </ul>
-        </div>
-        <div class="footerContactBlock">
-          <h1 class="footerTitle">Contact</h1>
+
+      <div class="contentBlock">
+        <h1 class="mainTitle red">
+          How do we use cookies?
+        </h1>
+        <p class="contentText">We use cookies for:</p>
+        <div class="listWithYellowDots">
           <ul class="list">
-            <div class="typeOfContactAndDetailsFooter">
-              <p class="typeOfContact">Phone:</p>
-              <li class="contactDetails">+ 37 368 68 38 24</li>
-            </div>
-            <div class="typeOfContactAndDetailsFooter">
-              <p class="typeOfContact">Email:</p>
-              <li class="contactDetails">office@extend.support.com</li>
-            </div>
-            <div class="typeOfContactAndDetailsFooter">
-              <p class="typeOfContact">Address:</p>
-              <li class="contactDetails">
-                MD-2001, 17 Mihail Kogalniceanu street, of.21 Chisinau, Moldova
+            <div class="pointAndList">
+              <div class="yellowPoint"></div>
+              <li class="listItem">
+                Remember you visited us before. This means that we can identify the number of unique visitors we
+                receive, allowing us to be sure that we have sufficient resources depending on the number of visits;
               </li>
             </div>
+            <div class="pointAndList">
+              <div class="yellowPoint"></div>
+              <li class="listItem">Customize the commercial elements on gsm-ro.com;</li>
+            </div>
+            <div class="pointAndList">
+              <div class="yellowPoint"></div>
+              <li class="listItem">
+                Collect anonymous statistics on how gsm-ro.com is used (including how long a user stays on the site) and
+                where our visitors come from, in order to improve the site and find out which are the most visited
+                categories;
+              </li>
+            </div>
+            <div class="pointAndList">
+              <div class="yellowPoint"></div>
+
+              <li class="listItem">To gather information about the pages of the site you visit but also other
+                information about other websites you visit, in order to be able to place you in a “market segment”. This
+                information is collected only according to the IP used, but also includes information about your county
+                and city, as well as the name of the internet provider. For more information and to find out how to
+                disable this feature, click on the following link http://www.youronlinechoices.com/en/.</li>
+            </div>
           </ul>
-          <a href="#" class="footerLink">Get in touch</a>
-          <a href="#" class="footerLink">Privacy Policy</a>
         </div>
       </div>
-      <div class="copyrigthBlock">
-        <p class="footerCopyrigth">
-          Copyright © 2020 Extend Support Multisourcing
-        </p>
+
+      <div class="contentBlock">
+        <h1 class="mainTitle red">
+          How can i manage cookies?
+        </h1>
+        <p class="contentText">Most browsers, smartphones and other Internet-connected devices are set to accept
+          cookies.</p>
+        <p class="contentText">You have different options for managing cookies. You can change your browser settings to
+          prevent cookies from being accepted, or depending on the browser you use, you can receive an alert when a
+          website tries to place a cookie on your browser. In most browsers you can accept cookies from the original
+          website (first party cookies), being able to refuse cookies belonging to another website (third party
+          cookies).</p>
+        <p class="contentText">You can delete cookies stored in your browser using a browser function. This does not
+          mean that your browser will no longer collect cookies in the future, but it does give you the freedom to
+          delete cookies after you have been online. Deleting cookies from one device does not automatically delete them
+          from the other one you use. You must delete all information from all browsers and all used devices
+          independently.</p>
+        <p class="contentText">You can find information about controlling cookies here: www.aboutcookies.org.</p>
+        <p class="contentText">Please note that if you disable cookies, you will restrict certain features of the site
+          and will not submit a request for an offer.</p>
       </div>
-    </footer>
 
-    <script src="js/jquery.js"></script>
-    <script type="text/javascript" src="/geo.js"></script>
-    <script type="text/javascript" src="/reg-form/reg.min.v2.js"></script>
+      <div class="contentBlock">
+        <h1 class="mainTitle red">
+          Does cookies contain personal information?
+        </h1>
+        <p class="contentText">Cookies do not contain confidential information, such as address, telephone number or
+          bank card details.</p>
+      </div>
+      <div class="contentBlock">
+        <h1 class="mainTitle red">
+          GENERAL TERMS AND CONDITIONS REGARDING THE PROCESSING OF PERSONAL DATA
+        </h1>
+        <ol class="contentBlockList">
+          <li class="contentText">
+            EXTEND SUPORT MULTISOURCING processes the personal data of the Users, the processing being carried out in
+            compliance with the legislation in force, the confidentiality of the personal data and the right to privacy
+            are guaranteed.
+          </li>
+          <li class="contentText">
+            <p class="contentText">Processing of personal data for the purpose of concluding and executing the Contract.
+              The personal data
+              provided by the User, will be processed for the purpose of the execution of this Contract, respectively
+              for the provision of the Services, invoicing and collecting the value of the Services, customer relations,
+              verification and recovery of debts, any other processing necessary for the good performance of the
+              contractual relationship.</p>
+            <p class="contentText">The personal data provided by the User will be disclosed to legal entities,
+              authorities and authorized
+              public institutions, at their request, in accordance with the legal provisions.</p>
+          </li>
+          <li class="contentText">
+            <p class="contentText">Personal data processing for promotional purposes (marketing). The personal data provided, as well as
+              other information provided by the Beneficiary, through this contract (such as: e-mail address, fax number,
+              mobile number, fixed telephone number) may be processed by Extend Support Multisourcing in compliance with
+              the rights of the Users, in particular the right to information and opposition, for the following
+              purposes:</p>
+              <p class="contentText">Remarketing and tracking users</p>
+              <p class="contentText">making commercial communications</p>
+              <p class="contentText">communication regarding the status of the services provided at the client’s request or when it is considered a necessity (eg in case of a technical or unauthorized problem) for GLOBAL SUPPORT MULTISOURCING products and services.</p>
+          </li>
+          <li class="contentText">
+            Processing of personal data with general identification function. The personal data with identification function are necessary for the correct identification of the client / authorized person in the processing systems of the GLOBAL SUPPORT MULTISOURCING, for carrying out the billing operations, respectively those that are necessary or in connection with the execution of the Contract.
+          </li>
+          <li class="contentText">User’s rights regarding the processing of the personal data provided.</li>
+        </ol>
+        <p class="contentText">The user has the following rights regarding the personal data provided:</p>
+        <ul>
+          <li class="contentText">– the right to information and access;</li>
+          <li class="contentText">– the right to intervene on the data;</li>
+          <li class="contentText">– the right to rectification;</li>
+          <li class="contentText">– the right to delete data;</li>
+          <li class="contentText">– the right to restrict processing;</li>
+          <li class="contentText">– the right to data portability;</li>
+          <li class="contentText">– the right of opposition and the individual automated decision-making process, including the creation of profiles;</li>
+          <li class="contentText">– the right to file a complaint with the supervisory authority ANSPDCP – National Supervisory Authority for Personal Data Processing</li>
+        </ul>
+        <p class="contentText">In order to exercise these rights, the User will submit to Extend Support Multisourcing  a written request, dated and signed, in the attention of the person responsible for the protection of personal data, at the email address office@extend.support.com</p>
+      </div>
+  </section>
+  <footer class="footer container">
+    <div class="logoFooterBlock">
+      <img class="logoFooter" src="./images//mainLogo.png" />
+    </div>
+    <div class="footerContentBlock">
+      <div class="quickLinksBlock">
+        <h1 class="footerTitle">Quick Links</h1>
+        <ul class="linksList">
+          <a href="#" class="navLinkFooter">
+            <li class="navTextFooter">Home</li>
+          </a>
+          <a href="#" class="navLinkFooter">
+            <li class="navTextFooter">About Us</li>
+          </a>
+          <a href="#" class="navLinkFooter">
+            <li class="navTextFooter">What We Offer</li>
+          </a>
+          <a href="#" class="navLinkFooter">
+            <li class="navTextFooter">Careers</li>
+          </a>
+          <a href="#" class="navLinkFooter">
+            <li class="navTextFooter">Contact</li>
+          </a>
+          <a href="#" class="navLinkFooter">
+            <img class="linkedinBot" src="./images/linkedin.png" /></a>
+          <a href="#" class="navLinkFooter">
+            <img class="facebookBot" src="./images/facebook.png" /></a>
+        </ul>
+      </div>
+      <div class="footerContactBlock">
+        <h1 class="footerTitle">Contact</h1>
+        <ul class="list">
+          <div class="typeOfContactAndDetailsFooter">
+            <p class="typeOfContact">Phone:</p>
+            <li class="contactDetails">+ 37 368 68 38 24</li>
+          </div>
+          <div class="typeOfContactAndDetailsFooter">
+            <p class="typeOfContact">Email:</p>
+            <li class="contactDetails">office@extend.support.com</li>
+          </div>
+          <div class="typeOfContactAndDetailsFooter">
+            <p class="typeOfContact">Address:</p>
+            <li class="contactDetails">
+              MD-2001, 17 Mihail Kogalniceanu street, of.21 Chisinau, Moldova
+            </li>
+          </div>
+        </ul>
+        <a href="#" class="footerLink">Get in touch</a>
+        <a href="#" class="footerLink">Privacy Policy</a>
+      </div>
+    </div>
+    <div class="copyrigthBlock">
+      <p class="footerCopyrigth">
+        Copyright © 2020 Extend Support Multisourcing
+      </p>
+    </div>
+  </footer>
 
-    <script>
-      var acc = document.getElementsByClassName("accordion");
-      var i;
+  <script src="js/jquery.js"></script>
+  <script type="text/javascript" src="/geo.js"></script>
+  <script type="text/javascript" src="/reg-form/reg.min.v2.js"></script>
 
-      for (i = 0; i < acc.length; i++) {
-        acc[i].addEventListener("click", function () {
-          this.classList.toggle("active");
-          var panel = this.lastElementChild;
+  <script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
 
-          if (panel.style.maxHeight) {
-            panel.style.maxHeight = null;
-          } else {
-            panel.style.maxHeight = panel.scrollHeight + "px";
-          }
-        });
-      }
-    </script>
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        var panel = this.lastElementChild;
 
-    <!-- <script>
+        if (panel.style.maxHeight) {
+          panel.style.maxHeight = null;
+        } else {
+          panel.style.maxHeight = panel.scrollHeight + "px";
+        }
+      });
+    }
+  </script>
+
+  <!-- <script>
       var regFormParams = { projectId: 478, language: "en" };
       FRSender.init(function (result) {
         if (result.data) {
@@ -376,5 +399,6 @@
         }
       });
     </script> -->
-  </body>
+</body>
+
 </html>

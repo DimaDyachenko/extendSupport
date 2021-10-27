@@ -113,7 +113,7 @@
     transition: 0.2s ease-in-out;
   }
   .header {
-    background-image: url("../images/recruiter_bg_desk.png");
+    background-image: url("../images/policy_bg_desk.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center top;
@@ -386,8 +386,8 @@
     width: 100%;
   }
   .wrapper {
-    padding: 175px 80px 15px;
-    width: 50%;
+    padding: 140px 190px 60px;
+    
   }
   .formContainer {
     margin: 140px 80px;
