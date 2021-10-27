@@ -293,10 +293,38 @@
 .progress {
   position: relative;
   width: 90%;
-  background-color: #d0ac5b;
+  height: auto;
   display: flex;
   padding: 12px 0px;
   justify-content: space-between;
+}
+
+.fade-in {
+  animation-name: fade-in;
+  animation-duration: 1s;
+
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+}
+
+@keyframes fade-in {
+  0% {
+    background-color: #d0ac5b;
+    width: 0%;
+  }
+  25% {
+    background-color: #d0ac5b;
+    width: 25%;
+  }
+
+  50% {
+    background-color: #d0ac5b;
+    width: 50%;
+  }
+
+  100% {
+    background-color: #d0ac5b;
+  }
 }
 
 .progressText {
