@@ -134,6 +134,14 @@
   .headerContent .titleWithLine {
     margin-left: 100px;
   }
+  .mainButton {
+    width: 100%;
+    max-width: 250px;
+    transition: all 0.3s ease-in-out;
+  }
+  .mainButton:hover {
+    background-color: #9a312e;
+  }
 
   .logoImgTop {
     max-width: 150px;
@@ -231,5 +239,9 @@
 
   .redButton {
       text-align: end;
+  }
+
+  .redBg:hover {
+    transform: scale(1.1);
   }
 }

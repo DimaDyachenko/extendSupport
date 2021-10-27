@@ -131,6 +131,17 @@
     max-width: 150px;
     height: 100%;
   }
+  .mainButton {
+    width: 100%;
+    max-width: 250px;
+    transition: all 0.3s ease-in-out;
+  }
+  .mainButton:hover {
+    background-color: #9a312e;
+  }
+  .redBg:hover {
+    transform: scale(1.1);
+  }
 
   .headerContent .titleWithLine::before {
     width: 80px;
