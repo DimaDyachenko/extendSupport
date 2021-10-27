@@ -148,6 +148,9 @@
 .headerContent {
   padding: 120px 80px 200px ;
 }
+.desktopWrapper:nth-of-type(1) .container {
+  padding: 80px 0;
+}
 
   .headerTitle {
     font-size: 50px;
