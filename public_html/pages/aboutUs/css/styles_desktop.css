@@ -337,7 +337,7 @@
 
   .whatWeOfferBlock,
   .progressBarsBlock {
- 
+    padding: 0;
     flex-direction: row;
   }
 

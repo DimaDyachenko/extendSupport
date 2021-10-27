@@ -314,6 +314,11 @@
     flex-direction: row;
     padding: 0 !important;
   }
+
+  .contactUsBlock .leftContentWithPhoto  {
+    padding: 140px 120px;
+  }
+  
   .typeOfContactAndDetails {
     display: flex;
     margin-bottom: 20px;
