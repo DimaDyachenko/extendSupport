@@ -80,15 +80,19 @@
 
 .mainButton {
   width: 100%;
-  padding: 12px 0;
+  padding: 0;
   background-color: #d0ac5b;
   outline: none;
   border: none;
   margin-bottom: 10px;
+  transition: .2s;
 }
 
 .redBg {
   background-color: #9a312e;
+}
+.redBg:hover {
+  transform: scale(1.1);
 }
 .goldBg {
   background-color: #D0AC5B;
@@ -98,6 +102,9 @@
   text-decoration: none;
   color: white;
   font-size: 16px;
+  display: block;
+  padding: 12px 0;
+  cursor: pointer;
 }
 
 .brownSection {
@@ -441,13 +448,21 @@
   background-color: #240C0C;
 }
 .blackWhiteBlockWrapperLink {
+  display: block;
   text-transform: uppercase;
   color: #D0AC5B;
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 2px;
   text-decoration: none;
+  cursor: pointer;
+  transition: 0.2s;
 }
+.blackWhiteBlockWrapperLink:hover {
+  transform: scale(1.1) translate(10px);
+  transform-origin: center;
+}
+
 .whiteBlock {
   padding: 54px 20px;
   background-color: #FEF8EE;
