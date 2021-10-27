@@ -196,6 +196,9 @@
     align-items: center;
     padding: 50px 120px;
   }
+  .carrerBlockDesktop:nth-of-type(1) .rightContent {
+    text-align: end;
+}
   .careersTitle {
     margin-bottom: 0 !important;
     font-size: 40px;
