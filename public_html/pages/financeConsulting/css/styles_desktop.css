@@ -131,6 +131,15 @@
     max-width: 150px;
     height: 100%;
   }
+
+  .headerContent .titleWithLine::before {
+    width: 80px;
+    left: -100px;
+  }
+
+  .headerContent .titleWithLine {
+    margin-left: 100px;
+  }
   .businessKnows {
     display: flex;
     justify-content: space-between;

@@ -193,6 +193,15 @@
     left: -60px;
     bottom: 10px;
   }
+
+  .headerContent .titleWithLine::before {
+    width: 80px;
+    left: -100px;
+  }
+
+  .headerContent .titleWithLine {
+    margin-left: 100px;
+  }
   .mainTitle {
     font-size: 30px;
     margin-bottom: 40px;
