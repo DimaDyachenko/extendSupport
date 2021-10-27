@@ -17,7 +17,7 @@
 }
 
 .header {
-  background-image: url("../images/careers_bg_mob.png");
+  background-image: url("../images/trainer_bg_mob.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center top;
@@ -91,7 +91,7 @@
   background-color: #9a312e;
 }
 .goldBg {
-  background-color: #D0AC5B;
+  background-color: #d0ac5b;
 }
 
 .mainButtonText {
@@ -217,12 +217,15 @@
   height: 10px;
   background-color: #d0ac5b;
   border-radius: 50%;
-  margin-top: 3px;
+  margin-top: 8px;
 }
 
 .listItem {
   margin-left: 15px;
   margin-bottom: 10px;
+  font-size: 15px;
+  line-height: 27px;
+  color: #240b0c;
 }
 
 .createChangesThatMattersImg {
@@ -428,21 +431,21 @@
   font-family: "Cardo";
   font-size: 40px;
   line-height: 44px;
-  color: #FEF8EE;
+  color: #fef8ee;
   font-weight: normal;
   margin-bottom: 40px;
 }
 .red {
-  color: #9A312E;
+  color: #9a312e;
 }
 
 .blackBlock {
   padding: 54px 20px;
-  background-color: #240C0C;
+  background-color: #240c0c;
 }
 .blackWhiteBlockWrapperLink {
   text-transform: uppercase;
-  color: #D0AC5B;
+  color: #d0ac5b;
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 2px;
@@ -450,5 +453,75 @@
 }
 .whiteBlock {
   padding: 54px 20px;
-  background-color: #FEF8EE;
+  background-color: #fef8ee;
+}
+
+.wrapper {
+  padding: 60px 20px 0;
+}
+.formContainer {
+  padding: 60px 20px;
+  margin: 0 20px 30px;
+  background: #d0ac5b33;
+}
+.formWrapper {
+  /* background: #d0ac5b33; */
+}
+.field {
+  width: 100%;
+  height: 47px;
+  box-sizing: border-box;
+  padding: 10px;
+  background: #fef8ee;
+  border: 1px solid rgba(36, 11, 12, 0.4);
+}
+.formGroup {
+  margin-bottom: 10px;
+}
+.formGroup:nth-child(5n) {
+  margin-bottom: 20px;
+}
+.formGroup:nth-child(7n) {
+  margin-bottom: 40px;
+}
+.formGroupWrapper {
+  display: flex;
+  margin-bottom: 20px;
+}
+.textarea {
+  height: 188px;
+}
+.field::placeholder {
+  font-size: 15px;
+  line-height: 27px;
+  font-family: "Prompt";
+}
+.formUploadInput {
+  margin-bottom: 25px;
+}
+.formUploadInputLabel,
+.formCheckboxText {
+  font-family: "Prompt";
+  font-size: 15px;
+  line-height: 27px;
+  color: #240b0c;
+}
+.formCheckboxText {
+  margin-left: 5px;
+}
+.formUploadInputSpan {
+  font-family: "Prompt";
+  font-size: 12px;
+  line-height: 25px;
+  color: rgba(36, 11, 12, 0.6);
+  margin-left: 20px;
+  padding: 0 5px;
+  border: 1px solid rgba(36, 11, 12, 0.4);
+  cursor: pointer;
+}
+.formCheckboxLink {
+  font-size: 15px;
+  line-height: 27px;
+  text-decoration-line: underline;
+  color: #962a2f;
 }

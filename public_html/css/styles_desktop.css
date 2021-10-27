@@ -113,7 +113,7 @@
     transition: 0.2s ease-in-out;
   }
   .header {
-    background-image: url("../images/careers_bg_desk.png");
+    background-image: url("../images/trainer_bg_desk.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center top;
@@ -384,5 +384,13 @@
   }
   .blackBlock, .whiteBlock {
     width: 100%;
+  }
+  .wrapper {
+    padding: 175px 80px 15px;
+    width: 50%;
+  }
+  .formContainer {
+    margin: 140px 80px;
+    width: 50%;
   }
 }
