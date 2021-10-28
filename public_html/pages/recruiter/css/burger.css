@@ -94,10 +94,8 @@
  * Make this absolute positioned
  * at the top left of the screen
  */
-
 #menu {
   position: absolute;
-  /* margin: -70px -20px; */
   top: calc(0% - 42px);
   right: calc(0% - 20px);
   text-align: center;
