@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="css/styles_tablet.css" />
     <link rel="stylesheet" href="css/styles_desktop.css" />
     <link rel="stylesheet" href="css/burger.css" />
+    <link rel="stylesheet" href="../../css/modal.css" />
+
 
     <!-- AUTOPIXEL -->
     <script>
@@ -254,9 +256,14 @@
               </div>
           </div>
       </form>
-      
-
-        </form>
+      <div class="backdrop is-hidden">
+        <div class="modal">
+          <button class="modalClose">+</button>
+          <p class="modalText">Thank you for contacting Extend Supports, we received your message and will contact you shortly.</p>
+          <p class="modalText">Regards,</p>
+          <p class="modalText">Extend Supports team</p>
+        </div>
+      </div>
       </div>
       </div>
     </div>
@@ -328,6 +335,7 @@
     </footer>
 
     <script src="js/jquery.js"></script>
+    <script src="../../js/modal.js"></script>
     <script type="text/javascript" src="/geo.js"></script>
     <script type="text/javascript" src="/reg-form/reg.min.v2.js"></script>
 

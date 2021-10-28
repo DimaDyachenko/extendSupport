@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="css/styles_tablet.css" />
     <link rel="stylesheet" href="css/styles_desktop.css" />
     <link rel="stylesheet" href="css/burger.css" />
+    <link rel="stylesheet" href="../../css/modal.css" />
 
     <!-- AUTOPIXEL -->
     <script>
@@ -226,7 +227,7 @@
         <h1 class="mainTitle red">
           Send your application:
         </h1>
-        <form class="">
+        <form class="" id="formElem">
           <div class="formInner">
               <div class="formGroup">
                   <input type="text" class="field" 
@@ -245,7 +246,7 @@
               </div>
               <div class="formGroup">
                   <input type="tel" class="field w-input gtd-field-tel"  
-                         required="required" placeholder="Phone Number" pattern="[0-9]">
+                  required="required"  placeholder="Phone Number" pattern="[0-9]">
               </div>
               <div class="formGroup">
                <textarea class="field textarea" placeholder="Anything you’d like to mention?"></textarea>
@@ -271,9 +272,15 @@
               </div>
           </div>
       </form>
-      
+      <div class="backdrop is-hidden">
+        <div class="modal">
+          <button class="modalClose">+</button>
+          <p class="modalText">Thank you for contacting Extend Supports, we received your message and will contact you shortly.</p>
+          <p class="modalText">Regards,</p>
+          <p class="modalText">Extend Supports team</p>
+        </div>
+      </div>
 
-        </form>
       </div>
       </div>
     </div>
@@ -345,6 +352,7 @@
     </footer>
 
     <script src="js/jquery.js"></script>
+    <script src="../../js/modal.js"></script>
     <script type="text/javascript" src="/geo.js"></script>
     <script type="text/javascript" src="/reg-form/reg.min.v2.js"></script>
 
