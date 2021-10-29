@@ -368,4 +368,8 @@
     display: block;
     margin-bottom: 0;
   }
+  .footer.container {
+    padding-bottom: 20px;
+  }
+ 
 }
