@@ -430,12 +430,22 @@
   padding-bottom: 0;
 }
 .cookiesWrapper {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+  display: block;
+  position: sticky;
   width: 100%;
-  height: 40px;
+  height: 80px;
+  bottom: 0;
+  left: 0;
   background-color: #fef8ee;
+}
+
+.cookiesBlock {
+  display: flex;
+  position: relative;
+  align-items: center;
+  flex-direction: column;
+  bottom: 0;
+  transform: translateY(50%);
 }
 .cookiesBtn {
   margin-right: 10px;
