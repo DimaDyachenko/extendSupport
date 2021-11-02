@@ -97,6 +97,7 @@
 
 #menu {
   position: absolute;
+  display: none;
   /* margin: -70px -20px; */
   top: calc(0% - 42px);
   right: calc(0% - 20px);
@@ -112,7 +113,11 @@
   transform: translate(100%, 0);
   transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
 }
-
+.is-vissually {
+  display: block !important;
+  opacity: 1 !important;
+  transition: all 5s linear !important;
+}
 .navText {
   padding: 10px 0;
   font-size: 30px;
