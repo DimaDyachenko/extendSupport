@@ -211,10 +211,10 @@
         <h1 class="mainTitle red">
           Send your application:
         </h1>
-        <form class="" id="formElem">
+        <form action="https://api.sendpulse.com/smtp/emails" method="post" class="" id="formElem">
           <div class="formInner">
               <div class="formGroup">
-                  <input type="text" class="field" 
+                  <input type="text" class="field" id="fname"
                           required="required" placeholder="Name" 
                          pattern="[^0-9!@#\$\^&%\*\(\)\+=\-\[\]\{\}\|:<>\?,\.']+">
               </div>
@@ -225,7 +225,7 @@
               </div>
               <div class="formGroup">
                   <input type="email" class="field w-input gtd-field-email"  
-                         required="required" placeholder="Email" 
+                         required="required" placeholder="Email"  id="email"
                          pattern="[A-Za-z0-9._%+-]{1,}@[a-zA-Z0-9._%+-]{1,}([.]{1}[a-zA-Z]{2,}|[.]{1}[a-zA-Z0-9._%+-]{2,}[.]{1}[a-zA-Z]{2,})">
               </div>
               <div class="formGroup">
@@ -337,6 +337,7 @@
 
     <script src="js/jquery.js"></script>
     <script src="../../js/modal.js"></script>
+    <!-- <script src="./js/form.js"></script> -->
     <script>
       var acc = document.getElementsByClassName("accordion");
       var i;
