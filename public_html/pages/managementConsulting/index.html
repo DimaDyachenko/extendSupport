@@ -8,10 +8,11 @@
 
     <!-- <link rel="icon" href="favicon.ico" /> -->
     <link rel="stylesheet" href="../../css/reset.css" />
+    <link rel="stylesheet" href="../../css/burger.css" />
     <link rel="stylesheet" href="css/styles_mobile.css" />
     <link rel="stylesheet" href="css/styles_tablet.css" />
     <link rel="stylesheet" href="css/styles_desktop.css" />
-    <link rel="stylesheet" href="css/burger.css" />
+    
   </head>
   <body>
     <header class="header">
@@ -73,11 +74,11 @@
                 <a href="../careers/index.html" class="navLink">
                   <li class="navText careers">CAREERS</li>
                 </a>
-                <a href="#" class="navLink">
-                  <img class="linkedinTop" src="./images/linkedin.png"
+                <a href="https://ru.linkedin.com/" class="navLink">
+                  <img class="linkedinBot" src="./images/linkedin.png"
                 /></a>
-                <a href="#" class="navLink">
-                  <img class="facebookTop" src="./images/facebook.png"
+                <a href="https://uk-ua.facebook.com/" class="navLink">
+                  <img class="facebookBot" src="./images/facebook.png"
                 /></a>
               </ul>
             </div>
@@ -117,11 +118,11 @@
               <a href="../careers/index.html" class="navLink">
                 <li class="navText careersDesktop">CAREERS</li>
               </a>
-              <a href="#" class="navLink">
-                <img class="linkedinTop" src="./images/linkedin.png"
+              <a href="https://ru.linkedin.com/" class="navLink">
+                <img class="linkedinBot" src="./images/linkedin.png"
               /></a>
-              <a href="#" class="navLink">
-                <img class="facebookTop" src="./images/facebook.png"
+              <a href="https://uk-ua.facebook.com/" class="navLink">
+                <img class="facebookBot" src="./images/facebook.png"
               /></a>
             </ul>
           </nav>
@@ -150,9 +151,6 @@
               them over the long-term, to help develop workforce skills, drive operational improvement and apply new
               working methods – Always innovating!</p>
           </div>
-          <!-- <button class="mainButton">
-            <a href="#" class="mainButtonText">Learn more about us</a>
-          </button> -->
         </div>
         <div class="rightContentPhoto">
           <img class="createChangesThatMattersImg" src="./images/twoWomen_mob.png" alt="">
@@ -188,10 +186,10 @@
             <a href="../contact/index.html" class="navLinkFooter"
               ><li class="navTextFooter">Contact</li></a
             >
-            <a href="#" class="navLinkFooter">
+            <a href="https://ru.linkedin.com/" class="navLinkFooter">
               <img class="linkedinBot" src="./images/linkedin.png"
             /></a>
-            <a href="#" class="navLinkFooter">
+            <a href="https://uk-ua.facebook.com/" class="navLinkFooter">
               <img class="facebookBot" src="./images/facebook.png"
             /></a>
           </ul>
@@ -214,7 +212,7 @@
               </li>
             </div>
           </ul>
-          <a href="#" class="footerLink">Get in touch</a>
+          <a href="../contact/index.html" class="footerLink">Get in touch</a>
           <a href="../privacy/index.html" class="footerLink">Privacy Policy</a>
         </div>
       </div>
@@ -224,6 +222,17 @@
         </p>
       </div>
     </footer>
+    <div class="cookiesWrapper">
+      <div class="cookiesBlock">
+        <p class="contentText">Accept cookies</p>
+        <div class="cookiesBox">
+          <button class="cookiesBtn">OK</button>
+          <a href="../privacy/index.html" class="cookiesLink"
+            >Privacy Policy</a
+          >
+        </div>
+      </div>
+    </div>
 
     <script>
       var acc = document.getElementsByClassName("accordion");
@@ -241,6 +250,20 @@
           }
         });
       }
+    </script>
+    <script>
+      (() => {
+        const refs = {
+          wrapper: document.querySelector(".cookiesWrapper"),
+          closeBtn: document.querySelector(".cookiesBtn"),
+        };
+
+        refs.closeBtn.addEventListener("click", toggleModal);
+
+        function toggleModal() {
+          refs.wrapper.classList.toggle("is-hidden");
+        }
+      })();
     </script>
   </body>
 </html>
