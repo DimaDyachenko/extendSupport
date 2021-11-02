@@ -7,27 +7,11 @@
     <title>Our Services</title>
 
     <!-- <link rel="icon" href="favicon.ico" /> -->
-    <link rel="stylesheet" href="/reg-form/intlTelInput.css" />
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/burger.css" />
+    <link rel="stylesheet" href="../../css/reset.css" />
+    <link rel="stylesheet" href="../../css/burger.css" />
     <link rel="stylesheet" href="css/styles_mobile.css" />
     <link rel="stylesheet" href="css/styles_tablet.css" />
     <link rel="stylesheet" href="css/styles_desktop.css" />
-
-    <!-- AUTOPIXEL -->
-    <script>
-      let url =
-        window.location.protocol + "//" + window.location.host + "/pixel.js";
-      let request = new XMLHttpRequest();
-      request.open("GET", url, false);
-      request.send(null);
-      if (request.status === 200) {
-        let template = document.createElement("script");
-        template.innerHTML = request.responseText;
-        document.getElementsByTagName("head")[0].appendChild(template);
-      }
-    </script>
-    <!-- END OF AUTOPIXEL -->
   </head>
 
   <body>
@@ -64,7 +48,7 @@
                 <a href="../aboutUs/index.html" class="navLink">
                   <li class="navText">ABOUT US</li>
                 </a>
-                <a  class="navLink innerMenu">
+                <a class="navLink innerMenu">
                   <li class="navText accordion">
                     WHAT WE OFFER
                     <div class="triangle"></div>
@@ -72,7 +56,10 @@
                       <a href="../humanResources/index.html" class="navLink">
                         <li class="navTextSmall">Human Resources</li>
                       </a>
-                      <a href="../managementConsulting/index.html" class="navLink">
+                      <a
+                        href="../managementConsulting/index.html"
+                        class="navLink"
+                      >
                         <li class="navTextSmall">Management Consulting</li>
                       </a>
                       <a href="../financeConsulting/index.html" class="navLink">
@@ -116,7 +103,10 @@
                     <a href="../humanResources/index.html" class="navLink">
                       <li class="navTextSmall">Human Resources</li>
                     </a>
-                    <a href="../managementConsulting/index.html" class="navLink">
+                    <a
+                      href="../managementConsulting/index.html"
+                      class="navLink"
+                    >
                       <li class="navTextSmall">Management Consulting</li>
                     </a>
                     <a href="../financeConsulting/index.html" class="navLink">
@@ -149,12 +139,24 @@
 
           <div class="headerNavBlock">
             <div class="headerNavSubblock">
-              <a href="../humanResources/index.html" class="ordinaryLink gold">Human Resources</a>
-              <a href="../managementConsulting/index.html" class="ordinaryLink gold">Management Consulting</a>
+              <a href="../humanResources/index.html" class="ordinaryLink gold"
+                >Human Resources</a
+              >
+              <a
+                href="../managementConsulting/index.html"
+                class="ordinaryLink gold"
+                >Management Consulting</a
+              >
             </div>
             <div class="headerNavSubblock">
-              <a href="../financeConsulting/index.html" class="ordinaryLink gold">Finance Consulting</a>
-              <a href="../training/index.html" class="ordinaryLink gold">Training</a>
+              <a
+                href="../financeConsulting/index.html"
+                class="ordinaryLink gold"
+                >Finance Consulting</a
+              >
+              <a href="../training/index.html" class="ordinaryLink gold"
+                >Training</a
+              >
             </div>
           </div>
         </div>
@@ -166,7 +168,9 @@
           <h1 class="mainTitle red">Human Resources</h1>
 
           <div class="linkWithArrow">
-            <a href="../humanResources/index.html" class="arrowLinkText">See more</a>
+            <a href="../humanResources/index.html" class="arrowLinkText"
+              >See more</a
+            >
           </div>
         </div>
         <div class="rightContentPhotoLitle">
@@ -194,7 +198,9 @@
           <h1 class="mainTitle white">Management Consulting</h1>
 
           <div class="linkWithArrow">
-            <a href="../managementConsulting/index.html" class="arrowLinkText">See more</a>
+            <a href="../managementConsulting/index.html" class="arrowLinkText"
+              >See more</a
+            >
           </div>
         </div>
         <div class="rightContentPhotoLitle">
@@ -206,7 +212,9 @@
           <h1 class="mainTitle red">Finance Consulting</h1>
 
           <div class="linkWithArrow">
-            <a href="../financeConsulting/index.html" class="arrowLinkText">See more</a>
+            <a href="../financeConsulting/index.html" class="arrowLinkText"
+              >See more</a
+            >
           </div>
         </div>
         <div class="rightContentPhotoLitle">
@@ -223,7 +231,9 @@
         </div>
         <div class="rightContent">
           <button class="mainButton redBg">
-            <a href="../contact/index.html" class="mainButtonText">Contact Us</a>
+            <a href="../contact/index.html" class="mainButtonText"
+              >Contact Us</a
+            >
           </button>
         </div>
       </div>
@@ -287,6 +297,15 @@
         </p>
       </div>
     </footer>
+    <div class="cookiesWrapper">
+      <div class="cookiesBlock">
+        <p class="contentText">Accept cookies</p>
+        <div class="cookiesBox">
+          <button class="cookiesBtn">OK</button>
+          <a href="../privacy/index.html" class="cookiesLink">Privacy Policy</a>
+        </div>
+      </div>
+    </div>
 
     <script src="js/jquery.js"></script>
     <script type="text/javascript" src="/geo.js"></script>
@@ -310,32 +329,19 @@
       }
     </script>
 
-    <!-- <script>
-      var regFormParams = { projectId: 478, language: "en" };
-      FRSender.init(function (result) {
-        if (result.data) {
-          if (typeof fbq === "function") {
-            fbq("track", "CompleteRegistration");
-          }
+    <script>
+      (() => {
+        const refs = {
+          wrapper: document.querySelector(".cookiesWrapper"),
+          closeBtn: document.querySelector(".cookiesBtn"),
+        };
 
-          window.location =
-            "https://rubix-eng478.trade-academy.pro/?token=" + result.data;
-        } else {
-          var winWidth = document.body.clientWidth;
-          if (winWidth > 500) {
-            winWidth = 500;
-          }
-          FRModalWindow.show(
-            winWidth,
-            "Current account is already existing</br>" +
-              "Click Next to redirect into the cabinet" +
-              '<button   style="font-size:16px; font-family:Roboto-Black; border-radius:5px; border-color: #f2ad07;' +
-              'background-color: #f2ad07; margin-left: 138px; margin-top: 10px; width:130px;height:30px;">' +
-              '<a href="https://rubix-eng478.trade-academy.pro/">Account</a></button>' +
-              "</div>"
-          );
+        refs.closeBtn.addEventListener("click", toggleModal);
+
+        function toggleModal() {
+          refs.wrapper.classList.toggle("is-hidden");
         }
-      });
-    </script> -->
+      })();
+    </script>
   </body>
 </html>

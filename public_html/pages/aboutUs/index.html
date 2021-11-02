@@ -8,8 +8,8 @@
 
     <!-- <link rel="icon" href="favicon.ico" /> -->
     <link rel="stylesheet" href="/reg-form/intlTelInput.css" />
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/burger.css" />
+    <link rel="stylesheet" href="../../css/reset.css" />
+    <link rel="stylesheet" href="../../css/burger.css" />
     <link rel="stylesheet" href="css/styles_mobile.css" />
     <link rel="stylesheet" href="css/styles_tablet.css" />
     <link rel="stylesheet" href="css/styles_desktop.css" />
@@ -375,6 +375,17 @@
         </p>
       </div>
     </footer>
+    <div class="cookiesWrapper">
+      <div class="cookiesBlock">
+        <p class="contentText">Accept cookies</p>
+        <div class="cookiesBox">
+          <button class="cookiesBtn">OK</button>
+          <a href="../privacy/index.html" class="cookiesLink"
+            >Privacy Policy</a
+          >
+        </div>
+      </div>
+    </div>
 
     <script src="js/jquery.js"></script>
     <script type="text/javascript" src="/geo.js"></script>
@@ -420,33 +431,19 @@
         }
       }
     </script>
+    <script>
+      (() => {
+        const refs = {
+          wrapper: document.querySelector(".cookiesWrapper"),
+          closeBtn: document.querySelector(".cookiesBtn"),
+        };
 
-    <!-- <script>
-      var regFormParams = { projectId: 478, language: "en" };
-      FRSender.init(function (result) {
-        if (result.data) {
-          if (typeof fbq === "function") {
-            fbq("track", "CompleteRegistration");
-          }
+        refs.closeBtn.addEventListener("click", toggleModal);
 
-          window.location =
-            "https://rubix-eng478.trade-academy.pro/?token=" + result.data;
-        } else {
-          var winWidth = document.body.clientWidth;
-          if (winWidth > 500) {
-            winWidth = 500;
-          }
-          FRModalWindow.show(
-            winWidth,
-            "Current account is already existing</br>" +
-              "Click Next to redirect into the cabinet" +
-              '<button   style="font-size:16px; font-family:Roboto-Black; border-radius:5px; border-color: #f2ad07;' +
-              'background-color: #f2ad07; margin-left: 138px; margin-top: 10px; width:130px;height:30px;">' +
-              '<a href="https://rubix-eng478.trade-academy.pro/">Account</a></button>' +
-              "</div>"
-          );
+        function toggleModal() {
+          refs.wrapper.classList.toggle("is-hidden");
         }
-      });
-    </script> -->
+      })();
+    </script>
   </body>
 </html>

@@ -393,9 +393,12 @@
   line-height: 27px;
 }
 
+<<<<<<< HEAD
+=======
 .footer.container {
   padding-bottom: 0;
 }
+>>>>>>> 5403a8bb2a2ec1aab5d562b67a148d87ac28b417
 .cookiesWrapper {
   display: block;
   position: sticky;
