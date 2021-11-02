@@ -532,3 +532,50 @@
   text-decoration-line: underline;
   color: #962a2f;
 }
+
+.footer.container {
+  padding-bottom: 0;
+}
+.cookiesWrapper {
+  display: block;
+  position: sticky;
+  width: 100%;
+  height: 120px;
+  bottom: 0;
+  left: 0;
+  background-color: #fef8ee;
+}
+
+.cookiesBlock {
+  display: flex;
+  position: relative;
+  align-items: center;
+  flex-direction: column;
+  bottom: 0;
+  transform: translateY(50%);
+}
+
+.cookiesBox {
+  margin-top: 20px;
+}
+
+.contentText{
+  font-size: 20px;
+}
+.cookiesBtn {
+  margin-right: 10px;
+  padding: 0 10px;
+  background-color: #d0ac5b;
+  color: white;
+  font-size: 16px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+.cookiesLink {
+  text-decoration: none;
+  color: #d0ac5b;
+}
+.is-hidden {
+  display: none;
+}

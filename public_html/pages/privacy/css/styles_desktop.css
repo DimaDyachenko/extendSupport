@@ -400,4 +400,7 @@
     margin: 140px 80px;
     width: 50%;
   }
+  .footer.container {
+    padding-bottom: 20px;
+  }
 }

@@ -399,4 +399,7 @@
   .list {
     width: 70%;
   }
+  .footer.container {
+    padding-bottom: 20px;
+  }
 }
