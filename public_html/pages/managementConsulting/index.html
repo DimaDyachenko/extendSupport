@@ -235,7 +235,20 @@
       </div>
     </div>
 
-    <script src="../../js/main.js"></script>
+    <script>
+      (() => {
+    const refs = {
+      wrapper: document.querySelector('.cookiesWrapper'),
+      closeBtn: document.querySelector('.cookiesBtn'),
+    };
+  
+    refs.closeBtn.addEventListener('click', toggleModal);
+
+    function toggleModal() {
+      refs.wrapper.classList.toggle(' is-hidden');
+    }
+  })();
+    </script>
     <script>
       var acc = document.getElementsByClassName("accordion");
       var i;
