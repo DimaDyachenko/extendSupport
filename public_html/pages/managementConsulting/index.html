@@ -25,7 +25,7 @@
               A fake / hidden checkbox is used as click reciever,
               so you can use the :checked selector on it.
               -->
-              <input type="checkbox" />
+              <input class="input" type="checkbox" />
 
               <!--
               Some spans to act as a hamburger.
@@ -222,9 +222,10 @@
         </p>
       </div>
     </footer>
+    
     <div class="cookiesWrapper">
       <div class="cookiesBlock">
-        <p class="contentText">Accept cookies</p>
+        <p class="contentText" style="margin: 0;">Accept cookies</p>
         <div class="cookiesBox">
           <button class="cookiesBtn">OK</button>
           <a href="../privacy/index.html" class="cookiesLink"
@@ -233,20 +234,21 @@
         </div>
       </div>
     </div>
+    <script src="./js/main.js"></script>
+    <script>
+      (() => {
+    const refs = {
+      wrapper: document.querySelector('.cookiesWrapper'),
+      closeBtn: document.querySelector('.cookiesBtn'),
+    };
+  
+    refs.closeBtn.addEventListener('click', toggleModal);
 
-    <div class="cookiesWrapper">
-      <div class="cookiesBlock">
-        <p class="contentText" style="margin: 0;">Accept cookies</p>
-        <div class="cookiesBox">
-          <button class="cookiesBtn">OK</button>
-          <a href="pages/privacy/index.html" class="cookiesLink"
-            >Privacy Policy</a
-          >
-        </div>
-      </div>
-    </div>
-
-    <script src="../../js/main.js"></script>
+    function toggleModal() {
+      refs.wrapper.classList.toggle(' is-hidden');
+    }
+  })();
+    </script>
     <script>
       var acc = document.getElementsByClassName("accordion");
       var i;
