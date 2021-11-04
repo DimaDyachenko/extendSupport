@@ -14,20 +14,7 @@
     <link rel="stylesheet" href="css/styles_desktop.css" />
     <link rel="stylesheet" href="css/burger.css" />
 
-    <!-- AUTOPIXEL -->
-    <script>
-      let url =
-        window.location.protocol + "//" + window.location.host + "/pixel.js";
-      let request = new XMLHttpRequest();
-      request.open("GET", url, false);
-      request.send(null);
-      if (request.status === 200) {
-        let template = document.createElement("script");
-        template.innerHTML = request.responseText;
-        document.getElementsByTagName("head")[0].appendChild(template);
-      }
-    </script>
-    <!-- END OF AUTOPIXEL -->
+   
   </head>
 
   <body>
