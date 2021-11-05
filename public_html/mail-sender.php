@@ -17,6 +17,7 @@ require 'PHPMailer/src/SMTP.php';
 $mail = new PHPMailer(TRUE);
 /* Open the try/catch block. */
 try {
+
     $data =  key($_POST);
     $email = str_replace('_', '.', $data);
 
