@@ -1,4 +1,4 @@
-@media (min-width: 1024px) {
+@media (min-width: 1224px) {
   @font-face {
     font-family: "Cardo";
     src: url("../fonts/Cardo-Regular.ttf");
@@ -271,7 +271,7 @@
   }
   .leftContentWithPhotoLitle {
     width: calc(50% - 80px);
-    padding: 70px 40px 70px 40px;
+    padding: 40px;
     align-self: center;
   }
   .humanResoursesBlock, .trainingBlock, .managementConsultingBlock, .financeConsultingBlock {
