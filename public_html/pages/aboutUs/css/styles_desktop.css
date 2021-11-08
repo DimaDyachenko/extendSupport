@@ -1,16 +1,5 @@
-@media (min-width: 1024px) {
-  @font-face {
-    font-family: "Cardo";
-    src: url("../fonts/Cardo-Regular.ttf");
-    font-weight: 400;
-    font-style: normal;
-  }
-  @font-face {
-    font-family: "Prompt";
-    src: url("../fonts/Prompt-Regular.ttf");
-    font-weight: 400;
-    font-style: normal;
-  }
+@media (min-width: 1440px) {
+
 
   .header {
     background-image: url("../images/aboutUsBgDesktop.png") !important;

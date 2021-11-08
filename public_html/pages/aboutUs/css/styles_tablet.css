@@ -1,16 +1,4 @@
 @media (min-width: 720px) {
-  @font-face {
-    font-family: "Cardo";
-    src: url("../fonts/Cardo-Regular.ttf");
-    font-weight: 400;
-    font-style: normal;
-  }
-  @font-face {
-    font-family: "Prompt";
-    src: url("../fonts/Prompt-Regular.ttf");
-    font-weight: 400;
-    font-style: normal;
-  }
   .container {
     padding: 80px 40px;
   }
