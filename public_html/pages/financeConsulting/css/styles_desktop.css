@@ -121,6 +121,23 @@
     margin-bottom: 10px !important;
     transition: 0.2s ease-in-out;
   }
+
+  .navLink .careersDesktop {
+    background-color: #d3b870;
+    width: 100%;
+    text-align: center;
+    transition: color 0.3s ease-in-out;
+  }
+
+  .navLink:hover .careersDesktop {
+    color: black;
+  }
+  .careersDesktop::after {
+    display: none;
+  }
+  .navList:nth-of-type(1) .navLink:nth-child(6) {
+    margin-right: 40px !important;
+  }
   .linkedinTop,
   .facebookTop {
     margin-top: 0 !important;
