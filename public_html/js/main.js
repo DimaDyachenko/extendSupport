@@ -8,11 +8,13 @@
   };
 
   refs.closeBtn.addEventListener("click", toggleModal);
-  refs.openBurger.addEventListener("click", toggleModal);
+  refs.openBurger.addEventListener("click", burger);
 
 
+  function burger() {
+    refs.burger.classList.toggle("is-vissually");
+  }
   function toggleModal() {
     refs.wrapper.classList.toggle("is-hidden");
-    refs.burger.classList.toggle("is-vissually");
   }
 })();
