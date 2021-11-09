@@ -326,17 +326,24 @@
 
     <script>
       (() => {
-        const refs = {
-          wrapper: document.querySelector(".cookiesWrapper"),
-          closeBtn: document.querySelector(".cookiesBtn"),
-        };
+  const refs = {
+    wrapper: document.querySelector(".cookiesWrapper"),
+    closeBtn: document.querySelector(".cookiesBtn"),
+    openBurger: document.querySelector(".input"),
+    burger: document.querySelector(".navList"),
+  };
 
-        refs.closeBtn.addEventListener("click", toggleModal);
+  refs.closeBtn.addEventListener("click", cookies);
+  refs.openBurger.addEventListener("click", burger);
 
-        function toggleModal() {
-          refs.wrapper.classList.toggle("is-hidden");
-        }
-      })();
+
+  function burger() {
+    refs.burger.classList.toggle("is-vissually");
+  }
+  function cookies() {
+    refs.wrapper.classList.toggle("is-hidden");
+  }
+})();
     </script>
     
   </body>

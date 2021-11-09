@@ -28,7 +28,7 @@
               so you can use the :checked selector on it.
               -->
               <input class="input" type="checkbox" />
- 
+
               <!--
               Some spans to act as a hamburger.
               
@@ -79,7 +79,7 @@
                 <a href="../careers/index.html" class="navLink">
                   <li class="navText careers">CAREERS</li>
                 </a>
-                <a  href="https://ru.linkedin.com/"class="navLink">
+                <a href="https://ru.linkedin.com/" class="navLink">
                   <img class="linkedinTop" src="./images/linkedin.WebP"
                 /></a>
                 <a href="https://uk-ua.facebook.com/" class="navLink">
@@ -214,7 +214,13 @@
         <div class="formContainer">
           <div class="formWrapper">
             <h1 class="mainTitle red">Send your application:</h1>
-            <form class="" id="formElem" action="../../mail-sender.php" method="POST" target="_top">
+            <form
+              class=""
+              id="formElem"
+              action="../../mail-sender.php"
+              method="POST"
+              target="_top"
+            >
               <div class="formInner">
                 <div class="formGroup">
                   <input
@@ -380,15 +386,12 @@
         <p class="contentText" style="margin: 0">Accept cookies</p>
         <div class="cookiesBox">
           <button class="cookiesBtn">OK</button>
-          <a href="../privacy/index.html" class="cookiesLink"
-            >Privacy Policy</a
-          >
+          <a href="../privacy/index.html" class="cookiesLink">Privacy Policy</a>
         </div>
       </div>
     </div>
- 
+
     <script src="js/jquery.js"></script>
-   <script src="../../js/main.js"></script>
     <script>
       var acc = document.getElementsByClassName("accordion");
       var i;
@@ -406,28 +409,56 @@
         });
       }
     </script>
-    
-    <script>
-    $('form#formElem').submit(function (event){
-        $.ajax({
-            type:"POST", // define method post or get
-            url:$('form#formElem').attr('action'), // gets the post url from your action attribute
-            data:$("input[name=femail]").val(), // binds your form data
-            dataType:'json', // server response data type, use 'html' 'json' etc
-            encode:true,
-            success:function(data){
-              console.log(data)
-            },
-            error:function( xhr, status, errorThrown ) {
-            //alert( "Sorry, there was a problem!" );
-            console.log( "Error: " + errorThrown );
-            console.log( "Status: " + status );
-            console.dir( xhr );
 
-            },
+    <script>
+      $("form#formElem").submit(function (event) {
+        $.ajax({
+          type: "POST", // define method post or get
+          url: $("form#formElem").attr("action"), // gets the post url from your action attribute
+          data: $("input[name=femail]").val(), // binds your form data
+          dataType: "json", // server response data type, use 'html' 'json' etc
+          encode: true,
+          success: function (data) {
+            console.log(data);
+          },
+          error: function (xhr, status, errorThrown) {
+            //alert( "Sorry, there was a problem!" );
+            console.log("Error: " + errorThrown);
+            console.log("Status: " + status);
+            console.dir(xhr);
+          },
         });
-         event.preventDefault(); // prevents from going to the posting url
-    });
-  </script>
+        event.preventDefault(); // prevents from going to the posting url
+      });
+    </script>
+    <script>
+      (() => {
+        const refs = {
+          wrapper: document.querySelector(".cookiesWrapper"),
+          closeBtn: document.querySelector(".cookiesBtn"),
+          openBurger: document.querySelector(".input"),
+          burger: document.querySelector(".navList"),
+          openModalBtn: document.querySelector(".mainButton"),
+          closeModalBtn: document.querySelector(".modalClose"),
+          modal: document.querySelector(".backdrop"),
+          openMenu: document.querySelector(".menu"),
+        };
+
+        refs.closeBtn.addEventListener("click", cookies);
+        refs.openBurger.addEventListener("click", burger);
+        refs.openModalBtn.addEventListener("click", modal);
+        refs.closeModalBtn.addEventListener("click", modal);
+
+        function burger() {
+          refs.burger.classList.toggle("is-vissually");
+        }
+        function cookies() {
+          refs.wrapper.classList.toggle("is-hidden");
+        }
+        function modal() {
+          refs.modal.classList.toggle("is-hidden");
+        }
+      })();
+    </script>
   </body>
 </html>

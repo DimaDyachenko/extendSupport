@@ -13,7 +13,6 @@
     <link rel="stylesheet" href="css/styles_mobile.css" />
     <link rel="stylesheet" href="css/styles_tablet.css" />
     <link rel="stylesheet" href="css/styles_desktop.css" />
-    
   </head>
   <body>
     <header class="header">
@@ -57,7 +56,10 @@
                       <a href="../humanResources/index.html" class="navLink">
                         <li class="navTextSmall">Human Resources</li>
                       </a>
-                      <a href="../managementConsulting/index.html" class="navLink">
+                      <a
+                        href="../managementConsulting/index.html"
+                        class="navLink"
+                      >
                         <li class="navTextSmall">Management Consulting</li>
                       </a>
                       <a href="../financeConsulting/index.html" class="navLink">
@@ -101,7 +103,10 @@
                     <a href="../humanResources/index.html" class="navLink">
                       <li class="navTextSmall">Human Resources</li>
                     </a>
-                    <a href="../managementConsulting/index.html" class="navLink">
+                    <a
+                      href="../managementConsulting/index.html"
+                      class="navLink"
+                    >
                       <li class="navTextSmall">Management Consulting</li>
                     </a>
                     <a href="../financeConsulting/index.html" class="navLink">
@@ -132,10 +137,30 @@
           <h2 class="titleWithLine">WHAT WE OFFER</h2>
           <h1 class="headerTitle">Management Consulting</h1>
           <ul class="headerList">
-            <li class="headerListItem"><a class="headerListItemLink" href="../humanResources/index.html">Human Resources</a></li>
-            <li class="headerListItem"><a class="headerListItemLink" href="../managementConsulting/index.html">Management Consulting</a></li>
-            <li class="headerListItem"><a class="headerListItemLink" href="../financeConsulting/index.html">Finance Consulting</a></li>
-            <li class="headerListItem"><a class="headerListItemLink" href="../training/index.html">Training</a></li>
+            <li class="headerListItem">
+              <a class="headerListItemLink" href="../humanResources/index.html"
+                >Human Resources</a
+              >
+            </li>
+            <li class="headerListItem">
+              <a
+                class="headerListItemLink"
+                href="../managementConsulting/index.html"
+                >Management Consulting</a
+              >
+            </li>
+            <li class="headerListItem">
+              <a
+                class="headerListItemLink"
+                href="../financeConsulting/index.html"
+                >Finance Consulting</a
+              >
+            </li>
+            <li class="headerListItem">
+              <a class="headerListItemLink" href="../training/index.html"
+                >Training</a
+              >
+            </li>
           </ul>
         </div>
       </div>
@@ -146,15 +171,25 @@
           <h2 class="titleWithLine letter">WE HELP</h2>
           <h1 class="mainTitle red">Create Changes that Matters.</h1>
           <div class="contentTextWrap">
-            <p class="contentText">We serve clients at every level of their organization, whether as a trusted advisor to
-              top management or as a hands-on coach for front line employees.</p>
-            <p class="contentText">We partner with clients to put recommendations into practice and work directly with
-              them over the long-term, to help develop workforce skills, drive operational improvement and apply new
-              working methods – Always innovating!</p>
+            <p class="contentText">
+              We serve clients at every level of their organization, whether as
+              a trusted advisor to top management or as a hands-on coach for
+              front line employees.
+            </p>
+            <p class="contentText">
+              We partner with clients to put recommendations into practice and
+              work directly with them over the long-term, to help develop
+              workforce skills, drive operational improvement and apply new
+              working methods – Always innovating!
+            </p>
           </div>
         </div>
         <div class="rightContentPhoto">
-          <img class="createChangesThatMattersImg" src="./images/twoWomen_mob.WebP" alt="">
+          <img
+            class="createChangesThatMattersImg"
+            src="./images/twoWomen_mob.WebP"
+            alt=""
+          />
         </div>
       </div>
       <div class="bottomContent">
@@ -223,20 +258,18 @@
         </p>
       </div>
     </footer>
-    
+
     <div class="cookiesWrapper">
       <div class="cookiesBlock">
-        <p class="contentText" style="margin: 0;">Accept cookies</p>
+        <p class="contentText" style="margin: 0">Accept cookies</p>
         <div class="cookiesBox">
           <button class="cookiesBtn">OK</button>
-          <a href="../privacy/index.html" class="cookiesLink"
-            >Privacy Policy</a
-          >
+          <a href="../privacy/index.html" class="cookiesLink">Privacy Policy</a>
         </div>
       </div>
     </div>
 
-   
+    <script src="../../js/jquery.js"></script>
     <script>
       var acc = document.getElementsByClassName("accordion");
       var i;
@@ -259,11 +292,17 @@
         const refs = {
           wrapper: document.querySelector(".cookiesWrapper"),
           closeBtn: document.querySelector(".cookiesBtn"),
+          openBurger: document.querySelector(".input"),
+          burger: document.querySelector(".navList"),
         };
 
-        refs.closeBtn.addEventListener("click", toggleModal);
+        refs.closeBtn.addEventListener("click", cookies);
+        refs.openBurger.addEventListener("click", burger);
 
-        function toggleModal() {
+        function burger() {
+          refs.burger.classList.toggle("is-vissually");
+        }
+        function cookies() {
           refs.wrapper.classList.toggle("is-hidden");
         }
       })();

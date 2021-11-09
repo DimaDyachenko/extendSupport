@@ -14,7 +14,6 @@
     <link rel="stylesheet" href="css/styles_mobile.css" />
     <link rel="stylesheet" href="css/styles_tablet.css" />
     <link rel="stylesheet" href="css/styles_desktop.css" />
-
   </head>
 
   <body>
@@ -51,7 +50,7 @@
                 <a href="../aboutUs/index.html" class="navLink">
                   <li class="navText">ABOUT US</li>
                 </a>
-                <a  class="navLink innerMenu">
+                <a class="navLink innerMenu">
                   <li class="navText accordion">
                     WHAT WE OFFER
                     <div class="triangle"></div>
@@ -59,7 +58,10 @@
                       <a href="../humanResources/index.html" class="navLink">
                         <li class="navTextSmall">Human Resources</li>
                       </a>
-                      <a href="../managementConsulting/index.html" class="navLink">
+                      <a
+                        href="../managementConsulting/index.html"
+                        class="navLink"
+                      >
                         <li class="navTextSmall">Management Consulting</li>
                       </a>
                       <a href="index.html" class="navLink">
@@ -103,7 +105,10 @@
                     <a href="../humanResources/index.html" class="navLink">
                       <li class="navTextSmall">Human Resources</li>
                     </a>
-                    <a href="../managementConsulting/index.html" class="navLink">
+                    <a
+                      href="../managementConsulting/index.html"
+                      class="navLink"
+                    >
                       <li class="navTextSmall">Management Consulting</li>
                     </a>
                     <a href="index.html" class="navLink">
@@ -136,12 +141,22 @@
 
           <div class="headerNavBlock">
             <div class="headerNavSubblock">
-              <a href="../humanResources/index.html" class="ordinaryLink gold">Human Resources</a>
-              <a href="../managementConsulting/index.html" class="ordinaryLink gold">Management Consulting</a>
+              <a href="../humanResources/index.html" class="ordinaryLink gold"
+                >Human Resources</a
+              >
+              <a
+                href="../managementConsulting/index.html"
+                class="ordinaryLink gold"
+                >Management Consulting</a
+              >
             </div>
             <div class="headerNavSubblock">
-              <a href="index.html" class="ordinaryLink gold">Finance Consulting</a>
-              <a href="../training/index.html" class="ordinaryLink gold">Training</a>
+              <a href="index.html" class="ordinaryLink gold"
+                >Finance Consulting</a
+              >
+              <a href="../training/index.html" class="ordinaryLink gold"
+                >Training</a
+              >
             </div>
           </div>
         </div>
@@ -241,7 +256,9 @@
         </div>
         <div class="rightContent redButton">
           <button class="mainButton redBg">
-            <a href="../contact/index.html" class="mainButtonText">Contact Us</a>
+            <a href="../contact/index.html" class="mainButtonText"
+              >Contact Us</a
+            >
           </button>
         </div>
       </div>
@@ -310,9 +327,7 @@
         <p class="contentText">Accept cookies</p>
         <div class="cookiesBox">
           <button class="cookiesBtn">OK</button>
-          <a href="../privacy/index.html" class="cookiesLink"
-            >Privacy Policy</a
-          >
+          <a href="../privacy/index.html" class="cookiesLink">Privacy Policy</a>
         </div>
       </div>
     </div>
@@ -340,19 +355,25 @@
       }
     </script>
 
-<script>
-  (() => {
-    const refs = {
-      wrapper: document.querySelector(".cookiesWrapper"),
-      closeBtn: document.querySelector(".cookiesBtn"),
-    };
+    <script>
+      (() => {
+        const refs = {
+          wrapper: document.querySelector(".cookiesWrapper"),
+          closeBtn: document.querySelector(".cookiesBtn"),
+          openBurger: document.querySelector(".input"),
+          burger: document.querySelector(".navList"),
+        };
 
-    refs.closeBtn.addEventListener("click", toggleModal);
+        refs.closeBtn.addEventListener("click", cookies);
+        refs.openBurger.addEventListener("click", burger);
 
-    function toggleModal() {
-      refs.wrapper.classList.toggle("is-hidden");
-    }
-  })();
-</script>
+        function burger() {
+          refs.burger.classList.toggle("is-vissually");
+        }
+        function cookies() {
+          refs.wrapper.classList.toggle("is-hidden");
+        }
+      })();
+    </script>
   </body>
 </html>

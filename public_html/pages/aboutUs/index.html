@@ -13,8 +13,6 @@
     <link rel="stylesheet" href="css/styles_mobile.css" />
     <link rel="stylesheet" href="css/styles_tablet.css" />
     <link rel="stylesheet" href="css/styles_desktop.css" />
-
-   
   </head>
 
   <body>
@@ -216,7 +214,10 @@
     <section class="creamSectionWithPhoto">
       <div class="resultsOriented">
         <div class="rightContentPhoto">
-          <img class="weAreYourSolutionImg" src="./images/writingTestImg.WebP" />
+          <img
+            class="weAreYourSolutionImg"
+            src="./images/writingTestImg.WebP"
+          />
         </div>
         <div class="leftContentWithPhoto container">
           <h2 class="titleWithLine">Values, Vision & Mission</h2>
@@ -367,15 +368,13 @@
         <p class="contentText">Accept cookies</p>
         <div class="cookiesBox">
           <button class="cookiesBtn">OK</button>
-          <a href="../privacy/index.html" class="cookiesLink"
-            >Privacy Policy</a
-          >
+          <a href="../privacy/index.html" class="cookiesLink">Privacy Policy</a>
         </div>
       </div>
     </div>
 
-    <script src="js/jquery.js"></script>
- 
+    <script src="../../js/jquery.js"></script>
+
     <script type="text/javascript" src="/geo.js"></script>
     <script type="text/javascript" src="/reg-form/reg.min.v2.js"></script>
 
@@ -424,11 +423,17 @@
         const refs = {
           wrapper: document.querySelector(".cookiesWrapper"),
           closeBtn: document.querySelector(".cookiesBtn"),
+          openBurger: document.querySelector(".input"),
+          burger: document.querySelector(".navList"),
         };
 
-        refs.closeBtn.addEventListener("click", toggleModal);
+        refs.closeBtn.addEventListener("click", cookies);
+        refs.openBurger.addEventListener("click", burger);
 
-        function toggleModal() {
+        function burger() {
+          refs.burger.classList.toggle("is-vissually");
+        }
+        function cookies() {
           refs.wrapper.classList.toggle("is-hidden");
         }
       })();
