@@ -113,7 +113,7 @@
     transition: 0.2s ease-in-out;
   }
   .header {
-    background-image: url("../images/mainBgTablet.png");
+    background-image: url("../images/main_bg_mobile.WebP");
     background-position: center center;
   }
   .logoImgTop {

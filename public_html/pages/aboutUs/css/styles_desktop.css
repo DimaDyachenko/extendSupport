@@ -2,7 +2,7 @@
 
 
   .header {
-    background-image: url("../images/aboutUsBgDesktop.png") !important;
+    background-image: url("../images/aboutUsBgDesktop.WebP") !important;
     background-position: bottom center;
   }
   .container {
@@ -114,10 +114,7 @@
     margin-bottom: 10px !important;
     transition: 0.2s ease-in-out;
   }
-  .header {
-    background-image: url("../images/mainBgTablet.png");
-    background-position: center center;
-  }
+ 
   .logoImgTop {
     max-width: 150px;
     height: 100%;
