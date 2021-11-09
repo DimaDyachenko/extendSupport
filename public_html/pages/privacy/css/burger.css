@@ -116,7 +116,6 @@
 .is-vissually {
   display: block !important;
   opacity: 1 !important;
-  transition: all 5s linear !important;
 }
 .navText {
   padding: 10px 0;
